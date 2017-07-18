@@ -5,9 +5,36 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">
 </head>
 <body>
 
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav-collapse">
+            <span class="sr-only">Toggle Navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <%= link_to root_path, class: "navbar-brand" do %>
+            
+            <span class="fname">KYLE</span> <span class="lname">GRONDIN</span>
+          <% end %>
+        </div>
+        <div class="collapse navbar-collapse" id="main-nav-collapse">
+          <div class="nav navbar-nav navbar-right">
+          <ul class="nav navbar-nav navbar-right">
+            <li><%= link_to "BLOG", '#' %></li>
+            <li><%= link_to "PROJECTS", '#' %></li>
+            <li><%= link_to "CONTACT", '#' %></li>
+            </ul>
+          </div>
+          
+        </div> <!-- /.navbar-collapse -->
+      </div>
+    </nav>
 <%= yield %>
 
 </body>
