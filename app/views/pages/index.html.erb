@@ -5,3 +5,40 @@
 <div class="container-fluid">
     <%= image_tag 'picture.jpg', class: 'indexPic text-center' %>
 </div>
+<div class="container-fluid gray-bg">
+  <div class="about-me">
+    <h1>about me</h1>
+    <p>My name is Kyle Grondin, and I am a 23 year old student at Aurora University in Aurora, Illinois.
+    I am currently pursuing a B.S. in Computer Science and work part time doing graphic
+    design and web design.  When I was around 11 or 12, I learned of Adobe Photoshop
+    because my father worked at a printing company.  I would spend hours and hours learning to
+    create anything I could to show off on the internet.  Eventually I learned about portfolios
+    and decided I wanted to make one.  I dived into HTML, CSS, and Javascript headfirst and loved it.  
+    This portfolio you see now, is unforunately not what I made back then, and sadly I lost the code long ago.  Ever since
+    then, I have loved to create stuff and make whatever I could.  I continued to design stuff
+    and eventually got a job creating a website.</p>
+    <p>I am proficient in Java, HTML, CSS, PHP, Python, C#, and am familiar with C++, and Javascript.
+    I love creating anything and in my spare time teach myself various languages and starting
+    new projects.  If I am not gaming, I am often seen making something new.  My current interests are
+    full stack web development, Android app development, and potentially small game development.</p>
+    <div class="resume">
+      <%= link_to 'view résumé', '#', class: 'btn btn-default btn-lg' %>
+    </div>
+  </div>
+</div> <!-- end gray about me -->
+<div class="container-fluid blue-bg">
+  <div class="blog">
+    <h1>latest blog post</h1>
+    <p class="date">July 20th, 2017 at 12:00pm</p>
+    <p class="post">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dignissim
+    risus ut libero egestas viverra et eu dolor. In hac habitasse platea dictumst. 
+    Cras vel neque quam. Nunc eu fermentum nisi, sit amet malesuada enim. Fusce 
+    efficitur magna quam, sit amet congue nisl ultricies et. Cras condimentum massa 
+    justo, auctor ultrices orci lobortis quis. Quisque mollis sapien ipsum, nec
+    ornare metus pulvinar vel ...</p>
+    <%= link_to '#', class: "blog-link" do %>
+      view full post
+      <i class="fa fa-arrow-right"></i>
+    <% end %>
+  </div>
+</div>

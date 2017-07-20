@@ -5,11 +5,12 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">
 </head>
 <body>
 
-    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="top">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav-collapse">
@@ -36,6 +37,25 @@
       </div>
     </nav>
 <%= yield %>
+<div class="container-fluid footer-bg">
+  <div class="footer">
+    <h3>Kyle Grondin</h3>
+    <div class="contact-icons">
+    <%= link_to '#' do %>
+      <i class="fa fa-linkedin-square fa-3x"></i>
+    <% end %>
+    <%= link_to '#' do %>
+      <i class="fa fa-github fa-3x"></i>
+    <% end %>
+    <%= link_to '#' do %>
+      <i class="fa fa-twitter fa-3x"></i>
+    <% end %>
+    <%= link_to '#' do %>
+      <i class="fa fa-facebook-square fa-3x"></i>
+    <% end %>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>
