@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Kyle Grondin</title>
+  <title>Kyle Grondin - Software Developer &amp; Graphic Designer</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -39,18 +39,20 @@
 <%= yield %>
 <div class="container-fluid footer-bg">
   <div class="footer">
-    <h3>Kyle Grondin</h3>
+    <h5>&copy; 2017 Kyle Grondin -
+      <%= link_to 'source','https://github.com/kagron/portfolio' %>
+    </h5>
     <div class="contact-icons">
-    <%= link_to '#' do %>
+    <%= link_to 'https://www.linkedin.com/in/kyle-grondin-3b922713a/' do %>
       <i class="fa fa-linkedin-square fa-3x"></i>
     <% end %>
-    <%= link_to '#' do %>
+    <%= link_to 'https://github.com/kagron' do %>
       <i class="fa fa-github fa-3x"></i>
     <% end %>
-    <%= link_to '#' do %>
+    <%= link_to 'https://twitter.com/Kagaroni' do %>
       <i class="fa fa-twitter fa-3x"></i>
     <% end %>
-    <%= link_to '#' do %>
+    <%= link_to 'https://www.facebook.com/kyle.grondin' do %>
       <i class="fa fa-facebook-square fa-3x"></i>
     <% end %>
     </div>
