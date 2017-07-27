@@ -16,3 +16,7 @@
 //= require_tree .
 //= require jquery3
 //= require bootstrap-sprockets
+
+$(document).on('turbolinks:load', function(){
+  $('.alert').delay(2000).fadeOut(2000);
+});

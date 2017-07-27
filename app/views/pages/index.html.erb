@@ -28,15 +28,10 @@
 </div> <!-- end gray about me -->
 <div class="container-fluid blue-bg">
   <div class="blog">
-    <h1>latest blog post</h1>
-    <p class="date">July 20th, 2017 at 12:00pm</p>
-    <p class="post">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dignissim
-    risus ut libero egestas viverra et eu dolor. In hac habitasse platea dictumst. 
-    Cras vel neque quam. Nunc eu fermentum nisi, sit amet malesuada enim. Fusce 
-    efficitur magna quam, sit amet congue nisl ultricies et. Cras condimentum massa 
-    justo, auctor ultrices orci lobortis quis. Quisque mollis sapien ipsum, nec
-    ornare metus pulvinar vel ...</p>
-    <%= link_to '#', class: "blog-link" do %>
+    <h1><%= @post.title %></h1>
+    <p class="date"><%= localize(@post.created_at, :format => :long) %></p>
+    <p class="post"><%= @post.content %></p></p>
+    <%= link_to post_path(@post), class: "blog-link" do %>
       view full post
       <i class="fa fa-arrow-right"></i>
     <% end %>
