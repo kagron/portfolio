@@ -1,0 +1,15 @@
+<div class="container-fluid gray-contact">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <h1>Blog Index</h1>
+      <% flash.each do |type, msg| %>
+        <%= content_tag :div, msg, class: "alert alert-#{type}" %>
+      <% end %>
+      
+        <%= @post.title %><br/>
+        <%= @post.content %><br/>
+    
+     
+  </div>
+  </div>
+</div>
