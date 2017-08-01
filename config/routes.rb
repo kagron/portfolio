@@ -2,7 +2,13 @@ Rails.application.routes.draw do
   root 'pages#index'
   resources :contacts, only: :create
   get 'contact', to: 'contacts#new', as: 'new_contact'
-  resources :blog, as: 'posts',  controller: 'posts'
+  get "/blog", to: 'posts#index'
+  
+  # Get /posts/2012/07/slug-of-the-post
+  get "/blog/:year/:month/:slug", :to => "posts#show",
+  :as => :post_date, :constraints => { :year => /\d{4}/, :month => /\d{1,2}/, :slug => /[a-z0-9\-]+/ }
+  
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

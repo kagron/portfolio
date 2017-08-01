@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
   
   def index
-    @posts = Post.all
+    @posts = Post.order(id: :desc).limit(10)
   end
   
   def new
@@ -9,16 +9,16 @@ class PostsController < ApplicationController
   end
   
   def edit
-    @post = Post.find( params[:id] )
+   
   end
   
   def show
-    @post = Post.find(params[:id])
+    @post = Post.find_by_slug(params[:slug])
   end
   
   def update
     # Retrieve user's profile from database
-    @post = Post.find(params[:id])
+    @post = Post.find(params[:slug])
     
     # Mass Assign edited profile attributes
     if @post.update_attributes(blog_params)
@@ -34,10 +34,6 @@ class PostsController < ApplicationController
    # Mass assignment of form fields into a post object
       @post = Post.new(blog_params)
       if @post.save
-         # Save the object to a database and if it goes through, send email
-         title = params[:post][:name]
-         content = params[:post][:content]
-         
          #Store success message in flash hash
          flash[:success] = "Blog Posted"
          redirect_to posts_path

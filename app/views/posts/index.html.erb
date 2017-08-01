@@ -6,13 +6,13 @@
         <%= content_tag :div, msg, class: "alert alert-#{type}" %>
       <% end %>
       <% @posts.each do |post| %>
-        <%= link_to post do %>
+        <%= link_to post_date_path(post.year, post.month, post.slug) do %>
         <%= post.title %>
         <% end %>
         <%= post.content %><br/>
         
       <% end %>
-      <%= link_to "new post", new_post_path, class: 'btn btn-default btn-lg' %>
+      <%= link_to "new post", '#', class: 'btn btn-default btn-lg' %>
      
   </div>
   </div>

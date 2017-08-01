@@ -31,7 +31,7 @@
     <h1><%= @post.title %></h1>
     <p class="date"><%= localize(@post.created_at, :format => :long) %></p>
     <p class="post"><%= @post.content %></p></p>
-    <%= link_to post_path(@post), class: "blog-link" do %>
+    <%= link_to '#', class: "blog-link" do %>
       view full post
       <i class="fa fa-arrow-right"></i>
     <% end %>
