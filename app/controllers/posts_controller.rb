@@ -9,7 +9,7 @@ class PostsController < ApplicationController
   end
   
   def edit
-   
+    @post = Post.find_by_slug(params[:slug])
   end
   
   def show
@@ -18,13 +18,13 @@ class PostsController < ApplicationController
   
   def update
     # Retrieve user's profile from database
-    @post = Post.find(params[:slug])
+    @post = Post.find_by_slug(params[:slug])
     
     # Mass Assign edited profile attributes
     if @post.update_attributes(blog_params)
       flash[:success] = "Blog post updated!"
-      # Show success message and redirect to profile
-      redirect_to posts_path(id: params[:id])
+      # Show success message and redirect to blog
+      redirect_to post_date_path(@post.year,@post.month,@post.slug)
     else
       render action: :edit
     end
