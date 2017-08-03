@@ -1,18 +1,21 @@
-<div class="container-fluid gray-contact">
+<div class="container gray-contact">
   <div class="row">
-    <div class="col-md-8 col-md-offset-2">
-      <h1>Blog Index</h1>
-      <% flash.each do |type, msg| %>
-        <%= content_tag :div, msg, class: "alert alert-#{type}" %>
-      <% end %>
+    <% flash.each do |type, msg| %>
+      <%= content_tag :div, msg, class: "alert alert-#{type}" %>
+    <% end %>
+    <div class="col-md-3">
+      <%= image_tag 'picture.jpg', class: 'blogPic text-center' %>
+      <h1>kyle grondin</h1>
+    </div>
+    <div class="col-md-9">
       
-        <%= @post.title %><br/>
-        <%= localize(@post.created_at, :format => :long) %><br/>
+        <h2><%= @post.title %></h2>
+        <%= link_to "edit post", edit_post_path(@post.year, @post.month, @post.slug), class: 'btn btn-default' %>
+        <p class="blog-date"><%= localize(@post.created_at, :format => :long) %></p>
         <%= markdown(@post.content) %><br/>
-        
-        <%= link_to "edit post", edit_post_path(@post.year, @post.month, @post.slug), class: 'btn btn-default btn-lg' %>
+        <%= link_to 'Back', :back %>
     
-     
+     <%= render 'disqus' %>
   </div>
   </div>
 </div>

@@ -43,6 +43,12 @@ class PostsController < ApplicationController
          redirect_to posts_path
       end
   end
+  def destroy
+      @post = Post.find_by_slug(params[:slug])
+      @post.destroy
+      flash[:success] = "Blog Post Deleted!"
+      redirect_to posts_path
+  end
    
   private
    # strong params

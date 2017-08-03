@@ -13,7 +13,8 @@ module ApplicationHelper
       fenced_code_blocks: true,
       lax_html_blocks: true,
       strikethrough: true,
-      superscript: true
+      superscript: true,
+      highlight: true
     }
     Redcarpet::Markdown.new(renderer, options).render(content).html_safe
   end
