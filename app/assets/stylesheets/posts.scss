@@ -1,3 +1,30 @@
 // Place all the styles related to the posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.blogPic {
+  position: relative;
+  height: 200px;
+  border-radius: 100%;
+  box-shadow: 5px 5px 10px;
+  margin: auto;
+  display: block;
+}
+.blog-index {
+}
+.blog-index h2 {
+ text-transform: lowercase;
+ margin-bottom: 0;
+}
+hr.blog-hr{
+  border-top: 1px solid black;
+}
+.blog-post {
+  margin: 5px;
+}
+.blog-post a {
+  color: black;
+}
+.blog-date {
+  color: #657786;
+}

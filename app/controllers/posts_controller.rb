@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
   
   def index
-    @posts = Post.order(id: :desc).limit(10)
+    @posts = Post.order(id: :desc).paginate(page: params[:page], per_page: 10)
   end
   
   def new
@@ -45,7 +45,7 @@ class PostsController < ApplicationController
   end
    
   private
-   # To collect data from form, we need to use strong parameters
+   # strong params
       def blog_params
          params.require(:post).permit(:title, :content)
       end

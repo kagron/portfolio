@@ -39,6 +39,18 @@ gem 'font-awesome-sass', '4.6.2'
 # Use hirb for better database table display in console
 gem 'hirb','0.7.3'
 
+# Use will-paginate to add pages to blog posts
+gem 'will_paginate', '~> 3.1', '>= 3.1.6'
+
+# Use bootstrap for will_paginate
+gem 'will_paginate-bootstrap', '~> 1.0', '>= 1.0.1'
+
+# Use redcarpet for markdown parsing
+gem 'redcarpet', '~> 3.3', '>= 3.3.4'
+
+# Pygments.rb for syntax highlighting
+gem 'pygments.rb', '~> 1.1', '>= 1.1.2'
+
 group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
