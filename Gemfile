@@ -55,6 +55,7 @@ gem 'pygments.rb', '~> 1.1', '>= 1.1.2'
 gem 'devise', '~> 4.2'
 
 gem 'rails_12factor'
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
