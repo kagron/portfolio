@@ -1,6 +1,6 @@
 require 'date'
 class PostsController < ApplicationController
-  
+  before_action :authenticate_user!, except: [:index, :show]
   def index
     if (!params[:year].present? && !params[:month].present?)
         @posts = Post.order(id: :desc).paginate(page: params[:page], per_page: 10)

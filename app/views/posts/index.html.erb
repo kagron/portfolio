@@ -1,8 +1,6 @@
 <div class="container gray-contact blog-index">
   <div class="row">
-    <% flash.each do |type, msg| %>
-      <%= content_tag :div, msg, class: "alert alert-#{type}" %>
-    <% end %>
+    
     
     <div class="col-md-3 blog-left-side">
       <%= render 'leftside' %>
