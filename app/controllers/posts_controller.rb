@@ -1,7 +1,16 @@
+require 'date'
 class PostsController < ApplicationController
   
   def index
-    @posts = Post.order(id: :desc).paginate(page: params[:page], per_page: 10)
+    if (!params[:year].present? && !params[:month].present?)
+        @posts = Post.order(id: :desc).paginate(page: params[:page], per_page: 10)
+    elsif params[:month].present?
+        @posts = Post.where("CAST(strftime('%m', created_at) as INT) = ? AND cast(strftime('%Y', created_at) as int) = ?", params[:month], params[:year]).order(id: :desc).paginate(page: params[:page], per_page: 10)
+    elsif params[:year].present?
+        @posts = Post.where("cast(strftime('%Y', created_at) as int) = ?", params[:year]).order(id: :desc).paginate(page: params[:page], per_page: 10)
+    end
+
+    @months = Post.pluck(:created_at).map{|i|  i.strftime("%B, %Y")}.uniq
   end
   
   def new
@@ -14,6 +23,7 @@ class PostsController < ApplicationController
   
   def show
     @post = Post.find_by_slug(params[:slug])
+    @months = Post.pluck(:created_at).map{|i|  i.strftime("%B, %Y")}.uniq
   end
   
   def update

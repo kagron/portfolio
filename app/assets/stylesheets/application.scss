@@ -137,7 +137,7 @@ html, body {
   -o-background-size: cover;
   background-size: cover;
   width: 100%;
-  height: 100%;
+  height: 500px;
   position: absolute;
   margin-left: -15px;
   margin-bottom: 0px;
@@ -149,6 +149,9 @@ html, body {
   -ms-filter: blur(5px);
   filter: blur(5px);
   opacity: 0.5;
+  -moz-box-shadow: inset 0px -2px 5px #000;
+   -webkit-box-shadow: inset 0px -2px 5px #000;
+   box-shadow: inset 0px -2px 5px #000;
 }
 .black-bg {
   background-color: #000;
@@ -215,10 +218,10 @@ a.blog-link {
 
 // Media Queries
 @media (max-width: 1023px) {
-    .about-me, .blog, .footer {
+    .about-me, .blog, .footer, .passions {
     padding: 120px 10px 20px 10px;
   }
-  .blog, .footer {
+  .blog, .footer, .passions {
     padding-top: 20px;
   }
   .jumbotron {

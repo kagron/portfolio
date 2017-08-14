@@ -1,14 +1,13 @@
-<div class="container-fluid gray-contact">
+<div class="container gray-contact">
   <div class="row">
     <% flash.each do |type, msg| %>
       <%= content_tag :div, msg, class: "alert alert-#{type}" %>
     <% end %>
-    <div class="col-md-3">
-      <%= image_tag 'picture.jpg', class: 'blogPic text-center' %>
-      <h1>kyle grondin</h1>
+    <div class="col-md-3 blog-left-side">
+      <%= render 'leftside' %>
     </div>
     <div class="col-md-9">
-      
+      <div class="well">
         <h2><%= @post.title %></h2>
         <%= link_to "edit post", edit_post_path(@post.year, @post.month, @post.slug), class: 'btn btn-default' %>
         <p class="blog-date"><%= localize(@post.created_at, :format => :long) %></p>
@@ -16,6 +15,7 @@
         <%= link_to 'Back', :back %>
     
      <%= render 'disqus' %>
+     </div>
   </div>
   </div>
 </div>

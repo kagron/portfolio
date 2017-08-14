@@ -1,0 +1,5 @@
+<%= image_tag 'picture.jpg', class: 'blogPic text-center' %>
+  <h1>kyle grondin</h1>
+  <% @months.each do |month, year| %>
+    <p><%= link_to month, post_month_path('2017','08') %></p>
+<% end %>

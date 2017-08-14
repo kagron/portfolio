@@ -17,5 +17,13 @@ Rails.application.routes.draw do
   delete "/blog/:year/:month/:slug", :to => "posts#destroy", 
   :as => :delete_post, :constraints => { :year => /\d{4}/, :month => /\d{1,2}/, :slug => /[a-z0-9\-]+/ }
   
+  # Get /posts/2012
+  get "/blog/:year", :to => "posts#index", 
+  :as => :post_year, :constraints => { :year => /\d{4}/ }
+  
+  # Get /posts/2012/08
+  get "/blog/:year/:month", :to => "posts#index", 
+  :as => :post_month, :constraints => { :year => /\d{4}/, :month => /\d{1,2}/, } 
+  
 
 end
