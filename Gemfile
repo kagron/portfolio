@@ -54,6 +54,8 @@ gem 'pygments.rb', '~> 1.1', '>= 1.1.2'
 # Devise for user authentication
 gem 'devise', '~> 4.2'
 
+gem 'rails_12factor'
+
 group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
