@@ -102,7 +102,7 @@ html, body {
   box-shadow: 0px 5px 10px;
   z-index: 2;
 }
-.about-me, .blog, .passions {
+.about-me, .blog, .passions, .coursework {
   padding: 120px 200px 100px 200px;
 }
 .about-me > h1,
@@ -116,9 +116,9 @@ html, body {
 }
 .about-me > p,
 .blog > p,
-.passions > p{
+.passions p{
   margin-top: 30px;
-  font-size: 14pt;
+  font-size: 13pt;
 }
 .resume {
   text-align: center;
@@ -154,6 +154,33 @@ html, body {
 }
 .passions > h1 {
   color: white;
+}
+
+// Relevant coursework
+.dark-gray-bg {
+  background-color: #2e2e2e;
+  margin: 0;
+  color: #e7e7e7;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0px 5px 5px rgba(0,0,0,0.7), 0px -2px 5px rgba(0,0,0,0.5);
+}
+
+.coursework > h1{
+  margin: auto;
+  display: block;
+  font-weight: 100;
+  font-size: 45pt;
+  text-align: center;
+  color: #e7e7e7;
+}
+
+.circle-logo {
+  height: 100px;
+}
+
+.college-title {
+  display: inline-block;
 }
 // Blog post section
 .blue-bg {
@@ -236,10 +263,10 @@ a.blog-link {
 
 // Media Queries
 @media (max-width: 1023px) {
-    .about-me, .blog, .footer, .passions {
+    .about-me, .blog, .footer, .passions, .coursework {
     padding: 120px 10px 20px 10px;
   }
-  .blog, .footer, .passions {
+  .blog, .footer, .passions, .coursework {
     padding-top: 20px;
   }
   .jumbotron {

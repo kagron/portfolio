@@ -7,7 +7,7 @@
 </div>
 <div class="container-fluid gray-bg">
   <div class="about-me">
-    <h1>about me</h1>
+    <h1>About Me</h1>
     <p>My name is Kyle Grondin, and I am a 23 year old 4th year student at Aurora University in Aurora, Illinois.
     I am currently pursuing a B.S. in Computer Science and work part time doing graphic
     design and full stack web development.  When I was around 11 or 12, I learned of Adobe Photoshop
@@ -25,16 +25,16 @@
 <div class="container-fluid black-bg">
 <div class="passions-bg"></div>
 <div class="passions">
-  <h1>what i do</h1>
+  <h1>What I Do</h1>
     <div class="row">
       <div class="col-sm-6">
-        <h3><i class="fa fa-code"></i> Web Development</h3>
+        <h2><i class="fa fa-code"></i> Web Development</h2>
           <p>One of my passions is creating a beautiful place to display information
           on the web.  Using HTML, CSS, Javascript, PHP, and Ruby on Rails, I make
           websites that are pleasing to look at in a DRY and RESTful environment</p>
       </div>  
       <div class="col-sm-6">
-        <h3><i class="fa fa-pencil-square-o"></i> Graphic and UX Design</h3>
+        <h2><i class="fa fa-pencil-square-o"></i> Graphic and UX Design</h2>
           <p>Creating attractive art and designs has been one of my favorite talents
           since I was 12.  After furthering my knowledge throughout high school and college,
           I can create any graphic or UX design in Photoshop/Illustrator</p>
@@ -43,12 +43,12 @@
     
     <div class="row">
       <div class="col-sm-6">
-        <h3><i class="fa fa-cogs"></i> Software Development</h3>
+        <h2><i class="fa fa-cogs"></i> Software Development</h2>
           <p>I can also develop applications that solve your problems using
           Java, C#, C++, or Python </p>
       </div>  
       <div class="col-sm-6">
-        <h3><i class="fa fa-book"></i> Always Progressing</h3>
+        <h2><i class="fa fa-book"></i> Always Progressing</h2>
           <p>No matter what I am currently working on, I always try to learn more 
           and further my knowledge.  There is so much to learn and always a new
           language or framework that I get interested in for a new project</p>
@@ -56,6 +56,49 @@
     </div><!-- end row two -->
   </div>
 </div><!-- end What I do --> 
+<div class="container-fluid dark-gray-bg">
+  <div class="coursework">
+    <h1>Relevant Coursework</h1>
+    <%= image_tag('AU-Logo.png', class: "circle-logo") %>
+    <h2 class="college-title">Aurora University</h2>
+    <hr>
+    <ul>
+      <li>
+        <h4>CSC-4350 Software Engineering</h4>
+        <p>hello</p>
+      </li>
+      <li>
+        <h4>CSC-4990 Computer Science Capstone</h4>
+        
+      </li>
+      <li>
+        <h4>CSC-3610 Advanced Programming</h4>
+        
+      </li>
+      <li>
+        <h4>CSC-4500 Database Design & Implementation</h4>
+        
+      </li>
+      <li>
+        <h4>CSC-4210 Advanced Web Application Development</h4>
+        
+      </li>
+      <li>
+        <h4>CSC-2650 Data Structures and Algorithms</h4>
+        
+      </li>
+      <li>
+        <h4>CSC-4210 Intro to Mobile Application Development</h4>
+        
+      </li>
+      <li>
+        <h4>CSC-3810 Integrated Programming</h4>
+        
+      </li>
+    </ul>
+  </div>
+  
+</div>
 <div class="container-fluid blue-bg">
   <div class="blog">
     <h1><%= link_to  @post.title, post_date_path(@post.year,@post.month,@post.slug) %></h1>
