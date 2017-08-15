@@ -57,9 +57,9 @@ gem 'devise', '~> 4.2'
 gem 'rails_12factor'
 gem 'tzinfo-data'
 
+gem 'pg'
 group :development, :test do
-  # Use sqlite3 as the database for Active Record
-  gem 'sqlite3'
+
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
 end
@@ -70,10 +70,5 @@ group :development do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
-end
-
-group :production do
-  # Use the PostgreSQL gem for Heroku production servers
-  gem 'pg', '0.18.4'
 end
 

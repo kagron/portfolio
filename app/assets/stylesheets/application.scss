@@ -216,6 +216,20 @@ a.blog-link {
   margin-right: 20px;
 }
 
+//Target the alert notice class and hide it
+.flash-container {
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    margin-top: 50px;
+}
+.alert-notice, .alert-alert {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255,255,255,0.5);
+    color: white;
+}
+
 // Media Queries
 @media (max-width: 1023px) {
     .about-me, .blog, .footer, .passions {

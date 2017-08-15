@@ -1,15 +1,14 @@
 <div class="container gray-contact">
   <div class="row">
-    <% flash.each do |type, msg| %>
-      <%= content_tag :div, msg, class: "alert alert-#{type}" %>
-    <% end %>
     <div class="col-md-3 blog-left-side">
       <%= render 'leftside' %>
     </div>
     <div class="col-md-9">
       <div class="well">
         <h2><%= @post.title %></h2>
-        <%= link_to "edit post", edit_post_path(@post.year, @post.month, @post.slug), class: 'btn btn-default' %>
+        <% if (user_signed_in?) %>
+          <%= link_to "edit post", edit_post_path(@post.year, @post.month, @post.slug), class: 'btn btn-default' %>
+        <% end %>
         <p class="blog-date"><%= localize(@post.created_at, :format => :long) %></p>
         <%= markdown(@post.content) %><br/>
         <%= link_to 'Back', :back %>

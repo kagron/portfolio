@@ -36,14 +36,19 @@
         </div> <!-- /.navbar-collapse -->
       </div>
     </nav>
-    <% flash.each do |type, msg| %>
-      <%= content_tag :div, msg, class: "alert alert-#{type}" %>
-    <% end %>
+    <div class="container flash-container">
+      <% flash.each do |type, msg| %>
+        <%= content_tag :div, msg, class: "alert alert-#{type}" %>
+      <% end %>
+    </div>
 <%= yield %>
 <div class="container-fluid footer-bg">
   <div class="footer">
     <h5>&copy; 2017 Kyle Grondin -
       <%= link_to 'source','https://github.com/kagron/portfolio' %>
+      <% if user_signed_in? %>
+        - <%= link_to "Log Out", destroy_user_session_path, method: :delete %>
+      <% end %>
     </h5>
     <div class="contact-icons">
     <%= link_to 'https://www.linkedin.com/in/kyle-grondin-3b922713a/' do %>
