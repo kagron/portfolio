@@ -8,14 +8,14 @@
 <div class="container-fluid gray-bg">
   <div class="about-me">
     <h1>about me</h1>
-    <p>My name is Kyle Grondin, and I am a 23 year old student at Aurora University in Aurora, Illinois.
+    <p>My name is Kyle Grondin, and I am a 23 year old 4th year student at Aurora University in Aurora, Illinois.
     I am currently pursuing a B.S. in Computer Science and work part time doing graphic
-    design and web design.  When I was around 11 or 12, I learned of Adobe Photoshop
+    design and full stack web development.  When I was around 11 or 12, I learned of Adobe Photoshop
     because my father worked at a printing company.  I would spend hours and hours learning to
     create anything I could to show off on the internet.  Eventually I learned about portfolios
     and decided I wanted to make one.  I dived into HTML, CSS, and Javascript headfirst and loved it.  
     This portfolio you see now, is unforunately not what I made back then, and sadly I lost the code long ago.  Ever since
-    then, I have loved to create stuff and make whatever I could.  I continued to design stuff
+    then, I have loved to create whatever I could.  I continued to design stuff
     and eventually got a job creating a website.</p>
     <div class="resume">
       <%= link_to 'view résumé', asset_path("resume3.pdf"), class: 'btn btn-default btn-lg' %>
@@ -23,23 +23,47 @@
   </div>
 </div> <!-- end gray about me -->
 <div class="container-fluid black-bg">
-   <div class="passions-bg"></div>
-  <div class="passions">
+<div class="passions-bg"></div>
+<div class="passions">
   <h1>what i do</h1>
-    <p>I am proficient in Java, HTML, CSS, PHP, Python, C#, Ruby (on Rails), and am familiar with C++, Javascript, MySQL, and SQLite3.
-      I love creating anything and in my spare time teach myself various languages and starting
-      new projects.  If I am not gaming, I am often seen making something new.  My current interests are
-      full stack web development, Android app development, and potentially small game development.</p>
+    <div class="row">
+      <div class="col-sm-6">
+        <h3><i class="fa fa-code"></i> Web Development</h3>
+          <p>One of my passions is creating a beautiful place to display information
+          on the web.  Using HTML, CSS, Javascript, PHP, and Ruby on Rails, I make
+          websites that are pleasing to look at in a DRY and RESTful environment</p>
+      </div>  
+      <div class="col-sm-6">
+        <h3><i class="fa fa-pencil-square-o"></i> Graphic and UX Design</h3>
+          <p>Creating attractive art and designs has been one of my favorite talents
+          since I was 12.  After furthering my knowledge throughout high school and college,
+          I can create any graphic or UX design in Photoshop/Illustrator</p>
+      </div>  
+    </div> <!-- end row one -->
+    
+    <div class="row">
+      <div class="col-sm-6">
+        <h3><i class="fa fa-cogs"></i> Software Development</h3>
+          <p>I can also develop applications that solve your problems using
+          Java, C#, C++, or Python </p>
+      </div>  
+      <div class="col-sm-6">
+        <h3><i class="fa fa-book"></i> Always Progressing</h3>
+          <p>No matter what I am currently working on, I always try to learn more 
+          and further my knowledge.  There is so much to learn and always a new
+          language or framework that I get interested in for a new project</p>
+      </div>  
+    </div><!-- end row two -->
   </div>
-</div><!-- What I do --> 
+</div><!-- end What I do --> 
 <div class="container-fluid blue-bg">
   <div class="blog">
-    <h1><%= @post.title %></h1>
+    <h1><%= link_to  @post.title, post_date_path(@post.year,@post.month,@post.slug) %></h1>
       <p class="date"><%= localize(@post.created_at, :format => :long) %></p>
       <p class="post"><%= markdown(@post.content[0..400]) %></p>
       <%= link_to post_date_path(@post.year,@post.month,@post.slug), class: "blog-link" do %>
-      view full post
-      <i class="fa fa-arrow-right"></i>
-    <% end %>
+        view full post
+        <i class="fa fa-arrow-right"></i>
+      <% end %>
   </div>
 </div>
