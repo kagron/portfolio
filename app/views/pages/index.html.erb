@@ -59,40 +59,44 @@
 <div class="container-fluid dark-gray-bg">
   <div class="coursework">
     <h1>Relevant Coursework</h1>
-    <%= image_tag('AU-Logo.png', class: "circle-logo") %>
-    <h2 class="college-title">Aurora University</h2>
+    <%= image_tag('AU-Logo.png', class: "circle-logo", style: 'float: left;') %>
+    <h2 class="college-title">Aurora University<br/>
+    B.S. in Computer Science</h2>
     <hr>
-    <ul>
+    <ul class="courses">
       <li>
-        <h4>CSC-4350 Software Engineering</h4>
-        <p>hello</p>
+        <h4>Software Engineering</h4>
       </li>
       <li>
-        <h4>CSC-4990 Computer Science Capstone</h4>
+        <h4>Computer Science Capstone</h4>
         
       </li>
       <li>
-        <h4>CSC-3610 Advanced Programming</h4>
+        <h4>Advanced Programming</h4>
         
       </li>
       <li>
-        <h4>CSC-4500 Database Design & Implementation</h4>
+        <h4>Database Design & Implementation</h4>
         
       </li>
       <li>
-        <h4>CSC-4210 Advanced Web Application Development</h4>
+        <h4>Advanced Web Application Development</h4>
         
       </li>
       <li>
-        <h4>CSC-2650 Data Structures and Algorithms</h4>
+        <h4>Data Structures and Algorithms</h4>
         
       </li>
       <li>
-        <h4>CSC-4210 Intro to Mobile Application Development</h4>
+        <h4>Intro to Mobile Application Development</h4>
         
       </li>
       <li>
-        <h4>CSC-3810 Integrated Programming</h4>
+        <h4>Integrated Programming</h4>
+        
+      </li>
+      <li>
+        <h4>Introduction to Computer Programming</h4>
         
       </li>
     </ul>
@@ -102,8 +106,8 @@
 <div class="container-fluid blue-bg">
   <div class="blog">
     <h1><%= link_to  @post.title, post_date_path(@post.year,@post.month,@post.slug) %></h1>
-      <p class="date"><%= localize(@post.created_at, :format => :long) %></p>
-      <p class="post"><%= markdown(@post.content[0..400]) %></p>
+      <p class="date">Published on <%= @post.created_at.strftime("%B %d, %Y") %></p>
+      <p class="post"><%= markdown(@post.content[0..400] + "...") %></p>
       <%= link_to post_date_path(@post.year,@post.month,@post.slug), class: "blog-link" do %>
         view full post
         <i class="fa fa-arrow-right"></i>

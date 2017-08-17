@@ -1,5 +1,5 @@
 <%= image_tag 'picture.jpg', class: 'blogPic text-center' %>
-  <h1>kyle grondin</h1>
+  <h1><span class="fname">KYLE</span> <span class="lname">GRONDIN</span></h1>
   <% if (user_signed_in?) %>
     <%= link_to "new post", new_post_path, class: 'btn btn-default btn-lg' %>
   <% end %>

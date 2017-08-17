@@ -9,7 +9,7 @@ class PostsController < ApplicationController
         @posts = Post.where("extract(year  from created_at) = ?", params[:year]).order(id: :desc).paginate(page: params[:page], per_page: 10)
     end
 
-    @months = Post.pluck(:created_at).map{|i|  i.strftime("%B, %Y")}.uniq
+    @months = Post.pluck(:created_at).map{|i|  i.strftime("%B %Y")}.uniq
   end
   
   def new

@@ -54,6 +54,8 @@ gem 'pygments.rb', '~> 1.1', '>= 1.1.2'
 # Devise for user authentication
 gem 'devise', '~> 4.2'
 
+# autoprefixer to make my css better because I'm lazy
+gem "autoprefixer-rails"
 gem 'rails_12factor'
 gem 'tzinfo-data'
 

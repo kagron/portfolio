@@ -71,9 +71,6 @@ html, body {
 .jumbotron {
   background-image: url("background.jpg");
   background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   width: 100%;
   height: 500px;
@@ -129,23 +126,16 @@ html, body {
   color: white;
 }
 .passions-bg{
-  background-image: url("services-lg.jpg");
+  background: url("services-lg.jpg") no-repeat center center;
   background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   width: 100%;
-  height: 100%;
+  height: 1000px;
   position: absolute;
   margin-left: -15px;
   margin-bottom: 0px;
   box-shadow: 0px 5px 10px;
   color: white;
-  -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
   filter: blur(5px);
   opacity: 0.5;
 }
@@ -181,6 +171,10 @@ html, body {
 
 .college-title {
   display: inline-block;
+}
+
+.courses {
+  margin-left: 75px;
 }
 // Blog post section
 .blue-bg {
@@ -279,5 +273,11 @@ a.blog-link {
   }
   .footer .fa {
     margin-right: 0px;
+  }
+  .courses {
+  margin-left: 0;
+  }
+  .college-title {
+    font-size: 15pt;
   }
 }

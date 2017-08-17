@@ -13,7 +13,7 @@
             <%= post.title %>
           <% end %>
           </h2>
-          <p class="blog-date"><%= localize(post.created_at, :format => :long) %></p>
+          <p class="blog-date">Published on <%= post.created_at.strftime("%B %d, %Y") %></p>
           <p><%= markdown (post.content) %></p>
         </div>
       <% end %>
