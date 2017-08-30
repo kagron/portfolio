@@ -24,7 +24,10 @@ Rails.application.routes.draw do
   
   # Get /posts/2012/08
   get "/blog/:year/:month", :to => "posts#index", 
-  :as => :post_month, :constraints => { :year => /\d{4}/, :month => /\d{1,2}/, } 
+  :as => :post_month, :constraints => { :year => /\d{4}/, :month => /\d{1,2}/, }
+  
+  # Projects
+  resources :projects, except: [:show, :edit, :update]
   
 
 end

@@ -2,9 +2,6 @@
   <div class="row">
     <div class="col-md-8 col-md-offset-2">
       <h1>add a new post</h1>
-      <% flash.each do |type, msg| %>
-        <%= content_tag :div, msg, class: "alert alert-#{type}" %>
-      <% end %>
       <%= render 'form' %>
   </div>
   </div>

@@ -59,6 +59,9 @@ gem "autoprefixer-rails"
 gem 'rails_12factor'
 gem 'tzinfo-data'
 
+# Use paperclip for image upload
+gem 'paperclip'
+
 gem 'pg'
 group :development, :test do
 
