@@ -2,9 +2,6 @@
   <div class="row">
     <div class="col-md-8 col-md-offset-2">
       <h1>edit a post</h1>
-      <% flash.each do |type, msg| %>
-        <%= content_tag :div, msg, class: "alert alert-#{type}" %>
-      <% end %>
       <%= form_for @post, url: post_date_path(@post.year, @post.month, @post.slug) do |f| %>
         <div class="form-group">
             <%= f.label :title %>

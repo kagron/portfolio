@@ -26,10 +26,10 @@ class PostsController < ApplicationController
   end
   
   def update
-    # Retrieve user's profile from database
+    # Retrieve post from database
     @post = Post.find_by_slug(params[:slug])
     
-    # Mass Assign edited profile attributes
+    # Mass Assign edited post attributes
     if @post.update_attributes(blog_params)
       flash[:success] = "Blog post updated!"
       # Show success message and redirect to blog

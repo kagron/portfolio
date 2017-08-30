@@ -1,7 +1,7 @@
 class Post < ActiveRecord::Base
   before_create :create_slug
   
-  validates :title, :content, :presence => true
+  validates :avatar, :title, :content, :presence => true
   validates :title, length: { maximum: 250 }
   validates :content, length:  { maximum: 5000 }
 

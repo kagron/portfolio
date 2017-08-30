@@ -25,9 +25,26 @@ Rails.application.routes.draw do
   # Get /posts/2012/08
   get "/blog/:year/:month", :to => "posts#index", 
   :as => :post_month, :constraints => { :year => /\d{4}/, :month => /\d{1,2}/, }
-  
+  # ---------------------------------------------------
   # Projects
+  # ---------------------------------------------------
   resources :projects, except: [:show, :edit, :update]
+  
+  # Get /projects/slug-of-the-project
+  get "/projects/:slug", :to => "projects#show",
+  :as => :project_slug, :constraints => {:slug => /[a-z0-9\-]+/ }
+  
+  # Edit
+  get "/projects/:slug/edit", :to => "projects#edit",
+  :as => :edit_project, :constraints => { :slug => /[a-z0-9\-]+/ }
+  
+  # Update
+  patch "/projects/:slug", :to => "projects#update"
+  put "/projects/:slug", :to => "projects#update"
+  
+  # Delete 
+  delete "/projects:slug", :to => "projects#destroy", 
+  :as => :delete_project, :constraints => { :slug => /[a-z0-9\-]+/ }
   
 
 end

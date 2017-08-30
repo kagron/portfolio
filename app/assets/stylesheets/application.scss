@@ -63,10 +63,11 @@ html, body {
     }
 }
 .nav > li > a {
-  margin-right: 30px;
-  padding-right: 0px;
+  padding-right: 15px;
 }
-
+.navbar-default .navbar-collapse {
+  border: 0;
+}
 // Jumbotron
 .jumbotron {
   background-image: url("background.jpg");
@@ -281,5 +282,10 @@ a.blog-link {
   }
   .college-title {
     font-size: 15pt;
+  }
+}
+@media (max-width: 770px) {
+  .nav > li > a {
+    margin-right: 0;
   }
 }

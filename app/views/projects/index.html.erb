@@ -1,20 +1,23 @@
 <div class="container-fluid gray-contact blog-index">
   <div class="row">
     
-    
-    <div class="col-md-12">
       <h1>Projects Index</h1>
+      <div class="contact-btn">
+        <% if (user_signed_in?) %>
+          <%= link_to 'New Project', new_project_path, class: 'btn btn-default contact-btn' %>
+        <% end %>
+      </div>
       <% @projects.each do |project| %>
+      <div class="col-md-3">
         <div class="blog-post well">
+          <%= link_to project_slug_path(project.slug) do %>
+            <%= image_tag project.avatar.url(:medium) %>
+          <% end %>
           <h2><%= project.title %></h2>
           <p class="blog-date">Published on <%= project.created_at.strftime("%B %d, %Y") %></p>
           <p><%= markdown (project.description) %></p>
         </div>
+      </div>
       <% end %>
-      
-      
-
- 
-    </div>
   </div>
 </div>

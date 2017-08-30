@@ -1,5 +1,5 @@
 class ProjectsController < ApplicationController
-  
+  before_action :authenticate_user!, except: [:index, :show]
   def index
     @projects = Project.all
   end
@@ -10,7 +10,7 @@ class ProjectsController < ApplicationController
   
   def create
    # Mass assignment of form fields into a project object
-      @project = Project.new(blog_params)
+      @project = Project.new(project_params)
       if @project.save
          #Store success message in flash hash
          flash[:success] = "Project Posted"
@@ -18,13 +18,42 @@ class ProjectsController < ApplicationController
       else 
          # If save fails, show errors in readable sentences
          flash[:danger] = @project.errors.full_messages.join(", ")
-         redirect_to projects_path
+         render action: :new
       end
+  end
+  
+  def show
+    @project = Project.find_by_slug(params[:slug])
+  end 
+  
+  def edit
+    @project = Project.find_by_slug(params[:slug])
+  end
+  
+  def update
+    # Retrieve project from database
+    @project = Project.find_by_slug(params[:slug])
+    
+    # Mass Assign edited project attributes
+    if @project.update_attributes(project_params)
+      flash[:success] = "Project updated!"
+      # Show success message and redirect to blog
+      redirect_to project_slug_path(@project.slug)
+    else
+      render action: :edit
+    end
+  end
+  
+  def destroy
+      @project = Project.find_by_slug(params[:slug])
+      @project.destroy
+      flash[:success] = "Project Deleted!"
+      redirect_to projects_path
   end
   
   private
    # strong params
-      def blog_params
-         params.require(:project).permit(:title, :description)
+      def project_params
+         params.require(:project).permit(:avatar, :title, :description)
       end
 end

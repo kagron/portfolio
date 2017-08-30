@@ -1,0 +1,27 @@
+<div class="container-fluid gray-contact">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <h1>edit a post</h1>
+      <%= form_for @project, url: project_slug_path(@project.slug), :html => {:multipart => true} do |f| %>
+        <div class="form-group">
+            <%= f.label :avatar %>
+            <%= f.file_field :avatar %>
+        </div>
+        <div class="form-group">
+            <%= f.label :title %>
+            <%= f.text_field :title, class: 'form-control' %>
+        </div>
+        <div class="form-group">    
+            <%= f.label :description %>
+            <%= f.text_area :description, class: 'form-control', rows: '15' %>
+        </div>
+        <div class="contact-btn">
+          <%= link_to "Delete", delete_project_path(@project.slug), class: 'btn btn-danger', method: :delete, 
+          data: { confirm: "Are you sure you want to delete this post?"} %>
+          
+          <%= f.submit 'Submit', class: 'btn btn-default contact-btn' %>
+        </div>
+      <% end %>
+  </div>
+  </div>
+</div>
