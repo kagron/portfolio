@@ -258,6 +258,10 @@ a.blog-link {
     color: white;
 }
 
+.img-responsive {
+  display: inline-block;  
+}
+
 // Media Queries
 @media (max-width: 1023px) {
     .about-me, .blog, .footer, .passions, .coursework {

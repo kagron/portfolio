@@ -8,15 +8,13 @@
         <% end %>
       </div>
       <% @projects.each do |project| %>
-      <div class="col-md-3">
-        <div class="blog-post well">
+      <div class="col-sm-3 text-center">
           <%= link_to project_slug_path(project.slug) do %>
-            <%= image_tag project.avatar.url(:medium) %>
+            <%= image_tag project.avatar.url(:medium), class: 'img-responsive text-center' %>
           <% end %>
           <h2><%= project.title %></h2>
           <p class="blog-date">Published on <%= project.created_at.strftime("%B %d, %Y") %></p>
           <p><%= markdown (project.description) %></p>
-        </div>
       </div>
       <% end %>
   </div>
