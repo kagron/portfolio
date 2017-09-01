@@ -1,3 +1,37 @@
 // Place all the styles related to the projects controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.project {
+    visibility: hidden;
+}
+
+.fadeIn {
+    -webkit-animation: animat_show 1s;
+    animation: animat_show 1s;
+    visibility: visible !important;
+}
+
+@-webkit-keyframes animat_show{
+    0%{opacity:0}
+    100%{opacity:1}
+}
+.project-title {
+    position: absolute;
+    top: 0;
+    color:white;
+    background-color:rgba(0,0,0,0.4);
+    line-height:100px;
+    text-align: center;
+    z-index: 10;
+    margin-right: 30px;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.project-title:hover {
+  opacity: 1;
+}

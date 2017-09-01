@@ -62,6 +62,8 @@ gem 'tzinfo-data'
 # Use paperclip for image upload
 gem 'paperclip'
 
+gem 'masonry-rails'
+
 gem 'pg'
 group :development, :test do
 

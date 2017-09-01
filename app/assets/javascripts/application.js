@@ -17,6 +17,40 @@
 //= require jquery3
 //= require bootstrap-sprockets
 
+
 $(document).on('turbolinks:load', function(){
   $('.alert').delay(2000).fadeOut(2000);
+});
+
+function showImages(el) {
+    var windowHeight = jQuery( window ).height();
+    $(el).each(function(){
+        var thisPos = $(this).offset().top;
+
+        var topOfWindow = $(window).scrollTop();
+        if (topOfWindow + windowHeight - 300 > thisPos ) {
+            $(this).addClass("fadeIn");
+        }
+    });
+}
+// if the image in the window of browser when the page is loaded, show that image
+$(document).ready(function(){
+        showImages('.project');
+});
+
+// if the image in the window of browser when scrolling the page, show that image
+$(window).scroll(function() {
+        showImages('.project');
+});
+
+
+$.getScript('//cdn.jsdelivr.net/isotope/1.5.25/jquery.isotope.min.js',function(){
+
+  /* activate jquery isotope */
+  $(document).ready( function(){
+    $('#projects').isotope({
+      itemSelector : '.item'
+    });
+  });
+  
 });

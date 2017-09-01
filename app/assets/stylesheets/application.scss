@@ -69,8 +69,9 @@ html, body {
   border: 0;
 }
 // Jumbotron
+// Background taken from https://www.deviantart.com/art/Nebula-Effects-Fractal-Stock-116324836
 .jumbotron {
-  background-image: url("background.jpg");
+  background-image: url("space.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -133,7 +134,6 @@ html, body {
   background-size: cover;
   width: 100%;
   height: 1000px;
-  background-attachment: fixed;
   position: absolute;
   margin-left: -15px;
   margin-bottom: 0px;
@@ -262,6 +262,7 @@ a.blog-link {
   display: inline-block;  
 }
 
+
 // Media Queries
 @media (max-width: 1023px) {
     .about-me, .blog, .footer, .passions, .coursework {
@@ -293,3 +294,4 @@ a.blog-link {
     margin-right: 0;
   }
 }
+
