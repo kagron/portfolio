@@ -9,7 +9,8 @@ class PostsController < ApplicationController
         @posts = Post.where("extract(year  from created_at) = ?", params[:year]).order(id: :desc).paginate(page: params[:page], per_page: 10)
     end
 
-    @months = Post.pluck(:created_at).map{|i|  i.strftime("%B %Y")}.uniq
+    # @months = Post.pluck(:created_at).map{|i|  i.strftime("%B %Y")}.uniq
+    @months = Post.order("created_at DESC").pluck(:created_at)
   end
   
   def new
@@ -22,7 +23,7 @@ class PostsController < ApplicationController
   
   def show
     @post = Post.find_by_slug(params[:slug])
-    @months = Post.pluck(:created_at).map{|i|  i.strftime("%B, %Y")}.uniq
+    @months = Post.order("created_at DESC").pluck(:created_at)
   end
   
   def update
@@ -59,6 +60,7 @@ class PostsController < ApplicationController
       redirect_to posts_path
   end
    
+  
   private
    # strong params
       def blog_params
