@@ -3,7 +3,10 @@ Rails.application.routes.draw do
   root 'pages#index'
   resources :contacts, only: :create
   get 'contact', to: 'contacts#new', as: 'new_contact'
-  
+
+  # ---------------------------------------------------
+  # Blog
+  # ---------------------------------------------------
   patch "/blog/:year/:month/:slug", :to => "posts#update"
   put "/blog/:year/:month/:slug", :to => "posts#update"
   resources :blog, as: 'posts',  controller: 'posts', except: [:show, :edit, :update]
@@ -25,6 +28,7 @@ Rails.application.routes.draw do
   # Get /posts/2012/08
   get "/blog/:year/:month", :to => "posts#index", 
   :as => :post_month, :constraints => { :year => /\d{4}/, :month => /\d{1,2}/, }
+  
   # ---------------------------------------------------
   # Projects
   # ---------------------------------------------------

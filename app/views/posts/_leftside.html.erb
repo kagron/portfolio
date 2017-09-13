@@ -1,17 +1,18 @@
 <%= image_tag 'picture.jpg', class: 'blogPic text-center' %>
   <h1><span class="fname">KYLE</span> <span class="lname">GRONDIN</span></h1>
   <% if (user_signed_in?) %>
-    <%= link_to "new post", new_post_path, class: 'btn btn-default btn-lg' %>
+    <%= link_to "new post", new_post_path, class: 'btn btn-default btn-lg' %><br />
   <% end %>
   <% current_month = 0 %>  
   <% current_year = 0 %>
+  <h3 class="text-center fname">Older Posts</h3>
   <% @months.each do |month| %>
     <% if current_year != month.year %>
         <% current_year = month.year %>
     <% end %>
     <% if current_month != month.month %>
         <% current_month = month.month %>
-        <p><%= link_to month.strftime("%B %Y"), post_month_path(current_year,current_month) %></p>
+        <%= link_to month.strftime("%B %Y"), post_month_path(current_year,current_month) %><br />
     <% end %>
       
 <% end %>

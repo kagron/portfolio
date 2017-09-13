@@ -47,7 +47,7 @@ $(window).scroll(function() {
 $.getScript('//cdn.jsdelivr.net/isotope/1.5.25/jquery.isotope.min.js',function(){
 
   /* activate jquery isotope */
-  $(document).ready( function(){
+  $('#projects').imagesLoaded( function(){
     $('#projects').isotope({
       itemSelector : '.item'
     });
