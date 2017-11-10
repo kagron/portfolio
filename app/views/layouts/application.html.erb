@@ -20,7 +20,7 @@
             <span class="icon-bar"></span>
           </button>
           <%= link_to root_path, class: "navbar-brand" do %>
-            
+
             <span class="fname">KYLE</span> <span class="lname">GRONDIN</span>
           <% end %>
         </div>
@@ -29,13 +29,13 @@
           <ul class="nav navbar-nav navbar-right">
             <li><%= link_to "BLOG", posts_path %></li>
             <li><%= link_to "PROJECTS", projects_path %></li>
-            <li><%= link_to "CONTACT", new_contact_path %></li>
+            <li style="padding-right: 20px"><%= link_to "CONTACT", new_contact_path %></li>
             <% if user_signed_in? %>
-              <li><%= link_to "LOG OUT", destroy_user_session_path, method: :delete %></li>
-            <% end %>  
+              <li style="padding-right: 20px"><%= link_to "LOG OUT", destroy_user_session_path, method: :delete %></li>
+            <% end %>
             </ul>
           </div>
-          
+
         </div> <!-- /.navbar-collapse -->
       </div>
     </nav>
