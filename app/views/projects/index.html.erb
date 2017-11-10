@@ -1,4 +1,8 @@
-<div class="container-fluid gray-contact blog-index">
+<div class="jumbotron jumbotron-fluid">
+    <h1 class="display-3">PROJECTS</h1>
+
+</div>
+<div class="container-fluid white-bg-no-margin blog-index">
   <div class="row">
     
       <div class="contact-btn">
@@ -6,18 +10,19 @@
           <%= link_to 'New Project', new_project_path, class: 'btn btn-default contact-btn' %>
         <% end %>
       </div>
-      <div id="projects">
         <% @projects.each do |project| %>
-        <div class="col-sm-3 text-center item">
-            
+        <div class="row project">
+          <div class="col-sm-5">
             <%= link_to project_slug_path(project.slug) do %>
-              <span class="project-title">
-                <%= project.title %>
-              </span>
-              <%= image_tag project.avatar.url(:medium), class: 'img-responsive text-center project' %>
+              <%= image_tag project.avatar.url(:medium), class: 'img-responsive' %>
             <% end %>
+           </div>
+           <div class="col-sm-7">
+            <h2><%= project.title %></h2>
+            <p><%= project.description %></p>
+            <%= link_to 'View Project', project_slug_path(project.slug), class: 'btn btn-primary' %>
+           </div>
         </div>
         <% end %>
-      </div>
   </div>
 </div>
