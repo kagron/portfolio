@@ -6,6 +6,7 @@
       <%= render 'leftside' %>
     </div>
     <div class="col-md-9">
+      <h1>LATEST POSTS</h1>
       <% @posts.each do |post| %>
         <div class="blog-post">
           <h2>
@@ -13,7 +14,7 @@
             <%= post.title %>
           <% end %>
           </h2>
-          <p class="blog-date">Published on <%= post.created_at.strftime("%B %d, %Y") %></p>
+          <p class="blog-date"><i class="fa fa-calendar"></i> <%= post.created_at.strftime("%B %d, %Y") %></p>
           <p><%= markdown (post.content) %></p>
           <hr>
         </div>

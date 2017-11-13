@@ -65,9 +65,6 @@ html, body {
         background-color: rgba(0, 0, 0, 0.5);
     }
 }
-.nav > li > a {
-  padding-right: 15px;
-}
 .navbar-default .navbar-collapse {
   border: 0;
 }
@@ -277,8 +274,19 @@ hr {
 
 // Media Queries
 @media (max-width: 1023px) {
+  .about-me > h1,
+  .passions > h1,
+  .coursework > h1 {
+    font-size: 30pt;
+  }
+  .passions h2 {
+    font-size: 20px;
+  }
     .about-me, .blog, .footer, .passions, .coursework {
     padding: 120px 10px 20px 10px;
+  }
+  .blog {
+    padding-bottom: 50px;
   }
   .blog, .footer, .passions, .coursework {
     padding-top: 20px;
@@ -298,7 +306,25 @@ hr {
   margin-left: 0;
   }
   .college-title {
-    font-size: 15pt;
+    font-size: 12pt;
+    margin-top: 5px;
+  }
+  .circle-logo {
+    height: 50px;
+  }
+  h1.display-3 {
+    font-size: 40px;
+  }
+  .placeholder {
+    width: 250px;
+    height: 100px;
+  }
+  #skills li {
+    margin: 5px;
+  }
+  #skills {
+    padding: 0;
+    text-align: center;
   }
 }
 @media (max-width: 770px) {

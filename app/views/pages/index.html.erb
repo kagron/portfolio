@@ -63,50 +63,64 @@
     <h2 class="college-title">Aurora University<br/>
     B.S. in Computer Science</h2>
     <hr>
-    <ul class="courses">
-      <li>
-        <h4>Software Engineering</h4>
-      </li>
-      <li>
-        <h4>Computer Science Capstone</h4>
-        
-      </li>
-      <li>
-        <h4>Advanced Programming</h4>
-        
-      </li>
-      <li>
-        <h4>Database Design & Implementation</h4>
-        
-      </li>
-      <li>
-        <h4>Advanced Web Application Development</h4>
-        
-      </li>
-      <li>
-        <h4>Data Structures and Algorithms</h4>
-        
-      </li>
-      <li>
-        <h4>Intro to Mobile Application Development</h4>
-        
-      </li>
-      <li>
-        <h4>Integrated Programming</h4>
-        
-      </li>
-      <li>
-        <h4>Introduction to Computer Programming</h4>
-        
-      </li>
-    </ul>
+    <div class="row">
+      <div class="col-md-6">
+        <ul class="courses">
+          <li>
+            <h4>Software Engineering</h4>
+          </li>
+          <li>
+            <h4>Computer Science Capstone</h4>
+            
+          </li>
+          <li>
+            <h4>Advanced Programming</h4>
+            
+          </li>
+          <li>
+            <h4>Database Design & Implementation</h4>
+            
+          </li>
+          <li>
+            <h4>Advanced Web Application Development</h4>
+            
+          </li>
+          <li>
+            <h4>Data Structures and Algorithms</h4>
+            
+          </li>
+          <li>
+            <h4>Intro to Mobile Application Development</h4>
+            
+          </li>
+          <li>
+            <h4>Integrated Programming</h4>
+            
+          </li>
+          <li>
+            <h4>Introduction to Computer Programming</h4>
+            
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <ul id="skills">
+          <li>Java</li>
+          <li>Ruby on Rails</li>
+          <li>Python</li>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>Javascript</li>
+        </ul>
+      </div>
+    </div>
   </div>
   
 </div>
 <div class="container-fluid blue-bg">
   <div class="blog">
     <h1><%= link_to  @post.title, post_date_path(@post.year,@post.month,@post.slug) %></h1>
-      <p class="date">Published on <%= @post.created_at.strftime("%B %d, %Y") %></p>
+      <p class="date"><i class="fa fa-calendar"></i> <%= @post.created_at.strftime("%B %d, %Y") %></p>
       <p class="post"><%= markdown(@post.content[0..400] + "...") %></p>
       <%= link_to post_date_path(@post.year,@post.month,@post.slug), class: "blog-link" do %>
         view full post

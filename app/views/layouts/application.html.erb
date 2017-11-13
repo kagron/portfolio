@@ -29,9 +29,9 @@
           <ul class="nav navbar-nav navbar-right">
             <li><%= link_to "BLOG", posts_path %></li>
             <li><%= link_to "PROJECTS", projects_path %></li>
-            <li style="padding-right: 20px"><%= link_to "CONTACT", new_contact_path %></li>
+            <li><%= link_to "CONTACT", new_contact_path %></li>
             <% if user_signed_in? %>
-              <li style="padding-right: 20px"><%= link_to "LOG OUT", destroy_user_session_path, method: :delete %></li>
+              <li><%= link_to "LOG OUT", destroy_user_session_path, method: :delete %></li>
             <% end %>
             </ul>
           </div>

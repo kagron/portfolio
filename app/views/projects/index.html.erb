@@ -1,9 +1,8 @@
-<div class="jumbotron jumbotron-fluid">
+<div class="jumbotron-projects"></div>
     <h1 class="display-3">PROJECTS</h1>
 
-</div>
-<div class="container-fluid white-bg-no-margin blog-index">
-  <div class="row">
+
+<div class="container-fluid white-bg-no-margin projects">
     
       <div class="contact-btn">
         <% if (user_signed_in?) %>
@@ -12,17 +11,18 @@
       </div>
         <% @projects.each do |project| %>
         <div class="row project">
-          <div class="col-sm-5">
+          <div class="col-sm-7">
             <%= link_to project_slug_path(project.slug) do %>
-              <%= image_tag project.avatar.url(:medium), class: 'img-responsive' %>
+            <div class="placeholder"></div>
+              <!--<%= image_tag project.avatar.url(:medium), class: 'img-responsive' %>-->
             <% end %>
            </div>
-           <div class="col-sm-7">
+           <div class="col-sm-5">
             <h2><%= project.title %></h2>
-            <p><%= project.description %></p>
+            <p class="date"><i class="fa fa-calendar"></i> <%= project.created_at.strftime("%B %d, %Y") %></p>
+            <p><%= markdown(project.description[0...1000]+ "...")  %></p>
             <%= link_to 'View Project', project_slug_path(project.slug), class: 'btn btn-primary' %>
            </div>
         </div>
         <% end %>
-  </div>
 </div>

@@ -8,7 +8,7 @@
         <% if (user_signed_in?) %>
           <%= link_to "edit project",edit_project_path, class: 'btn btn-default' %>
         <% end %>
-        <p class="blog-date"><%= localize(@project.created_at, :format => :long) %></p>
+        <p class="blog-date"><i class="fa fa-calendar"></i> <%= localize(@project.created_at, :format => :long) %></p>
         <%= markdown(@project.description) %><br/>
         <%= link_to 'Back', :back %>
   
