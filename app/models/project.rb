@@ -10,7 +10,13 @@ class Project < ActiveRecord::Base
                     :default_url => "/images/:style/missing.png"
   validates_attachment_content_type :avatar, :content_type => /\Aimage\/.*\Z/
   
+  def next
+    Project.where("id > ?", id).order("id ASC").first || Project.first
+  end
   
+  def previous
+    Project.where("id < ?", id).order("id DESC").first || Project.last
+  end
   private
     def create_slug
       self.slug = title.parameterize 
