@@ -15,11 +15,11 @@
     <hr>
         <div class="share">
           <h4>Share <%= @post.title %></h4>
-          <a onclick="javascript:window.open('http://twitter.com/intent/tweet?text=<%= @post.title %> by @kagaroni - &amp;url=<%= post_url(@post) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);">
+          <a onclick="javascript:window.open('http://twitter.com/intent/tweet?text=<%= @post.title %> by @kagaroni - &amp;url=<%= post_date_url(@post.year, @post.month, @post.slug) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);">
             <i class="fa fa-twitter fa-2x"></i></a>
-          <a onclick="javascript:window:open('http://www.facebook.com/sharer.php?u=<%= post_url(@post) %>', '_blank','width=800, height=500, top=200, left=300');void(0);">
+          <a onclick="javascript:window:open('http://www.facebook.com/sharer.php?u=<%= post_date_url(@post.year, @post.month, @post.slug) %>', '_blank','width=800, height=500, top=200, left=300');void(0);">
             <i class="fa fa-facebook fa-2x"></i></a>
-          <a onclick="javascript:window:open('http://plus.google.com/share?url=<%= post_url(@post) %>', '_blank','width=800, height=500, top=200, left=300');void(0);">
+          <a onclick="javascript:window:open('http://plus.google.com/share?url=<%= post_date_url(@post.year, @post.month, @post.slug) %>', '_blank','width=800, height=500, top=200, left=300');void(0);">
             <i class="fa fa-google-plus fa-2x"></i></a>
         </div>
      <%= render 'disqus' %>
