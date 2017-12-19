@@ -56,7 +56,7 @@ gem 'devise', '~> 4.2'
 
 # autoprefixer to make my css better because I'm lazy
 gem "autoprefixer-rails"
-gem 'rails_12factor'
+gem 'rails_12factor', group: :production
 gem 'tzinfo-data'
 
 # Use paperclip for image upload
