@@ -17,13 +17,25 @@
   </div>
   <div class="row">
     <div class="col-md-8 col-md-offset-2">
+      <div class="project-title">
         <h2><%= @project.title %></h2>
         <% if (user_signed_in?) %>
           <%= link_to "edit project",edit_project_path, class: 'btn btn-default' %>
         <% end %>
         <p class="blog-date"><i class="fa fa-calendar"></i> <%= localize(@project.created_at, :format => :long) %></p>
+        </div>
         <%= markdown(@project.description) %><br/>
         <%= link_to 'Back', :back %>
+        <hr>
+        <div class="share">
+          <h4>Share <%= @project.title %></h4>
+          <a onclick="javascript:window.open('http://twitter.com/intent/tweet?text=<%= @project.title %> by @kagaroni - &amp;url=<%= project_slug_url(@project.slug) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);">
+            <i class="fa fa-twitter fa-2x"></i></a>
+          <a onclick="javascript:window:open('http://www.facebook.com/sharer.php?u=<%= project_slug_url(@project.slug) %>', '_blank','width=800, height=500, top=200, left=300');void(0);">
+            <i class="fa fa-facebook fa-2x"></i></a>
+          <a onclick="javascript:window:open('http://plus.google.com/share?url=<%= project_slug_url(@project.slug) %>', '_blank','width=800, height=500, top=200, left=300');void(0);">
+            <i class="fa fa-google-plus fa-2x"></i></a>
+        </div>
     </div>
   </div>
 </div>
