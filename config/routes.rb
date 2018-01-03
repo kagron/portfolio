@@ -3,7 +3,10 @@ Rails.application.routes.draw do
   root 'pages#index'
   resources :contacts, only: :create
   get 'contact', to: 'contacts#new', as: 'new_contact'
-
+  get 'edit', to: 'pages#edit'
+  # Update index
+  patch "/", :to => "pages#update"
+  put "/", :to => "pages#update"
   # ---------------------------------------------------
   # Blog
   # ---------------------------------------------------

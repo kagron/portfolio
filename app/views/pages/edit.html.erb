@@ -7,15 +7,27 @@
 </div>
 <div class="container-fluid white-bg">
   <div class="about-me">
-    <h1><%= @about.title %><% if user_signed_in? %>
-    <%= link_to edit_path, class: 'btn btn-primary' do %>
-      <i class="fa fa-edit"></i>
+    <%= form_for @about, url: root_path(), :html => {:multipart => true} do |f| %>
+      <div class="form-group">
+            <%= f.label(:title, "Title") %>
+            <%= f.text_field :title, class: 'form-control' %>
+      </div>
+      <div class="form-group">
+            <%= f.label(:content, "Content") %>
+            <%= f.text_area :content, class: 'form-control', rows: 12 %>
+      </div>
+      <p><strong>Resume</strong></p>
+      <% if !@about.resume_file.nil? %>
+        <%= link_to @about.resume_file_url  do %>
+          <i class="fa fa-file-o"></i> View current resume
+        <% end %>
       <% end %>
-    <% end %></h1> 
-    <p><%= @about.content %></p>
-    <div class="resume">
-      <%= link_to 'view résumé', @about.resume_file_url, class: 'btn btn-default btn-lg' %>
-    </div>
+        <%= f.file_field :resume_file %><br/>
+      <div class="resume">
+        <%= f.submit 'Save', class: 'btn btn-default contact-btn btn-lg' %>
+      </div>
+      
+    <% end %>
   </div>
 </div> <!-- end gray about me -->
 <div class="container-fluid black-bg">
@@ -113,14 +125,4 @@
   </div>
   
 </div>
-<div class="container-fluid blue-bg">
-  <div class="blog">
-    <h1><%= link_to  @post.title, post_date_path(@post.year,@post.month,@post.slug) %></h1>
-      <p class="date"><i class="fa fa-calendar"></i> <%= @post.created_at.strftime("%B %d, %Y") %></p>
-      <p class="post"><%= markdown(@post.content[0..400] + "...") %></p>
-      <%= link_to post_date_path(@post.year,@post.month,@post.slug), class: "blog-link" do %>
-        view full post
-        <i class="fa fa-arrow-right"></i>
-      <% end %>
-  </div>
 </div>

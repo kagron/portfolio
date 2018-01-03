@@ -62,6 +62,8 @@ gem 'tzinfo-data'
 # Use paperclip for image upload
 gem 'paperclip'
 
+# Use CarrierWave for attachments
+gem 'carrierwave', '~> 1.0'
 gem 'masonry-rails'
 
 gem 'pg'
