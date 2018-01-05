@@ -15,10 +15,12 @@ class PostsController < ApplicationController
   
   def new
     @post = Post.new
+    @months = Post.order("created_at DESC").pluck(:created_at)
   end
   
   def edit
     @post = Post.find_by_slug(params[:slug])
+    @months = Post.order("created_at DESC").pluck(:created_at)
   end
   
   def show
