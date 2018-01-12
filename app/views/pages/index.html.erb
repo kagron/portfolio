@@ -1,10 +1,13 @@
+<!-- Jumbotron -->
 <div class="jumbotron jumbotron-fluid">
   <div class="container-fluid">
   </div>
 </div>
+<!-- picture of me -->
 <div class="container-fluid">
     <%= image_tag 'picture.jpg', class: 'indexPic text-center' %>
 </div>
+<!-- about me section -->
 <div class="container-fluid white-bg">
   <div class="about-me">
     <h1><%= @about.title %><% if user_signed_in? %>
@@ -13,13 +16,16 @@
       <% end %>
     <% end %></h1> 
     <p><%= @about.content %></p>
+    <!-- resume -->
     <div class="resume">
       <%= link_to 'view résumé', @about.resume_file_url, class: 'btn btn-default btn-lg' %>
     </div>
   </div>
-</div> <!-- end gray about me -->
+</div> <!-- end about me -->
 <div class="container-fluid black-bg">
+<!-- background for passions section -->
 <div class="passions-bg"></div>
+<!-- What I do section -->
 <div class="passions">
   <h1>What I Do</h1>
     <div class="row">
@@ -87,6 +93,7 @@
   </div>
   
 </div>
+<!-- latest blog post -->
 <div class="container-fluid blue-bg">
   <div class="blog">
     <h1><%= link_to  @post.title, post_date_path(@post.year,@post.month,@post.slug) %></h1>

@@ -1,21 +1,28 @@
+<!-- Jumbotron -->
 <div class="jumbotron jumbotron-fluid">
   <div class="container-fluid">
   </div>
 </div>
+<!-- picture of me -->
 <div class="container-fluid">
     <%= image_tag 'picture.jpg', class: 'indexPic text-center' %>
 </div>
 <div class="container-fluid white-bg">
+  <!-- editable about me -->
   <div class="about-me">
+    <!-- form for about me -->
     <%= form_for @about, url: root_path(), :html => {:multipart => true} do |f| %>
+    <!-- label and text field for title -->
       <div class="form-group">
             <%= f.label(:title, "Title") %>
             <%= f.text_field :title, class: 'form-control' %>
       </div>
+      <!-- label and text area for content -->
       <div class="form-group">
             <%= f.label(:content, "Content") %>
             <%= f.text_area :content, class: 'form-control', rows: 12 %>
       </div>
+      <!-- view current resume and upload a new one -->
       <p><strong>Resume</strong></p>
       <% if !@about.resume_file.nil? %>
         <%= link_to @about.resume_file_url  do %>

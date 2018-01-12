@@ -6,8 +6,8 @@
         <% end %>
       </div>
       <div class="col-md-6">
-        <div class="placeholder"></div>
-        
+        <!--<div class="placeholder"></div>-->
+        <%= image_tag @project.avatar.url(:medium), class: 'img-responsive' %>
       </div>
       <div class="col-md-3 text-center projects-np">
         <%= link_to project_slug_path(@project.next.slug) do %>

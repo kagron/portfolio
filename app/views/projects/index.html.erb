@@ -13,8 +13,8 @@
         <div class="row project">
           <div class="col-sm-7">
             <%= link_to project_slug_path(project.slug) do %>
-            <div class="placeholder"></div>
-              <!--<%= image_tag project.avatar.url(:medium), class: 'img-responsive' %>-->
+            <!--<div class="placeholder"></div>-->
+              <%= image_tag project.avatar.url(:medium), class: 'img-responsive' %>
             <% end %>
            </div>
            <div class="col-sm-5">
