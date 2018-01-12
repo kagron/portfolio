@@ -1,5 +1,6 @@
 class Project < ActiveRecord::Base
   before_create :create_slug
+  before_update :create_slug
   
   validates :avatar, :title, :description, :presence => true
   validates :title, length: { maximum: 250 }
