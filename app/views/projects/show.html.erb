@@ -1,7 +1,7 @@
 <% content_for :title, @project.title + " by Kyle Grondin" %>
 <div class="container-fluid gray-contact">
   <div class="row">
-    <div class="col-md-3 text-center projects-np">
+    <div class="col-md-3 text-center projects-np show-projects-np">
       <%= link_to project_slug_path(@project.previous.slug) do %>
           <i class=" fa fa-angle-double-left fa-2x"></i> <h3 style="display: inline;">Previous Project</h3>
         <% end %>
@@ -11,6 +11,11 @@
         <%= image_tag @project.avatar.url, class: 'img-responsive' %>
       </div>
       <div class="col-md-3 text-center projects-np">
+        <div class="hidden-projects-np">
+          <%= link_to project_slug_path(@project.previous.slug) do %>
+            <i class=" fa fa-angle-double-left fa-2x"></i> <h3 style="display: inline;">Previous Project</h3>
+          <% end %>
+        </div>
         <%= link_to project_slug_path(@project.next.slug) do %>
           <h3 style="display: inline;">Next Project</h3> <i class=" fa fa-angle-double-right fa-2x"></i>
         <% end %>

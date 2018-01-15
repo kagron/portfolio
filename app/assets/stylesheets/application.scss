@@ -326,10 +326,30 @@ hr {
     padding: 0;
     text-align: center;
   }
+  .projects-np {
+    margin-top: 0;
+  }
+  .projects-np h3 {
+    font-size: 15px;
+  }
+  .projects-np .fa-2x {
+    font-size: 1em;
+  }
+  .hidden-projects-np {
+    display: inline;
+    margin-right: 50px;
+  }
+  .show-projects-np {
+    display: none;
+  }
+  .projects {
+    padding-top: 450px;
+  }
 }
 @media (max-width: 770px) {
   .nav > li > a {
     margin-right: 0;
+    text-align: center;
   }
 }
 
