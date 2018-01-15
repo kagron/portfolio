@@ -1,9 +1,10 @@
 /* line 4, /home/ubuntu/workspace/app/assets/stylesheets/contacts.scss */
 .gray-contact {
   position: relative;
-  background-color: #bebebe;
+  background-color: white;
   padding-top: 100px;
-  box-shadow: 0px 5px 10px;
+  -webkit-box-shadow: 0px 5px 10px;
+          box-shadow: 0px 5px 10px;
   padding-bottom: 100px;
 }
 
@@ -17,6 +18,532 @@
 .contact-btn {
   text-align: center;
 }
+/* line 5, /home/ubuntu/workspace/app/assets/stylesheets/pages.scss */
+#skills li {
+  list-decoration: none;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #337ab7;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 7;
+  margin: 10px;
+}
+/* line 5, /home/ubuntu/workspace/app/assets/stylesheets/posts.scss */
+.blogPic {
+  position: relative;
+  height: 200px;
+  border-radius: 100%;
+  -webkit-box-shadow: 5px 5px 10px;
+          box-shadow: 5px 5px 10px;
+  margin: auto;
+  display: block;
+}
+
+/* line 13, /home/ubuntu/workspace/app/assets/stylesheets/posts.scss */
+.blog-index h2 {
+  margin-bottom: 0;
+}
+
+/* line 16, /home/ubuntu/workspace/app/assets/stylesheets/posts.scss */
+hr.blog-hr {
+  border-top: 1px solid black;
+}
+
+/* line 19, /home/ubuntu/workspace/app/assets/stylesheets/posts.scss */
+.blog-post {
+  margin: 5px;
+}
+
+/* line 22, /home/ubuntu/workspace/app/assets/stylesheets/posts.scss */
+.blog-date {
+  color: #657786;
+}
+
+/* line 25, /home/ubuntu/workspace/app/assets/stylesheets/posts.scss */
+.blog-left-side {
+  text-align: center;
+}
+/* line 4, /home/ubuntu/workspace/app/assets/stylesheets/projects.scss */
+.project {
+  padding: 20px 0 20px 20px;
+}
+
+/* line 7, /home/ubuntu/workspace/app/assets/stylesheets/projects.scss */
+.project h2 {
+  margin-top: 0;
+}
+
+/* line 10, /home/ubuntu/workspace/app/assets/stylesheets/projects.scss */
+h1.display-3 {
+  text-align: center;
+  color: white;
+  top: 180px;
+  font-weight: 900;
+  font-size: 100px;
+  position: relative;
+  z-index: 3;
+}
+
+/* line 20, /home/ubuntu/workspace/app/assets/stylesheets/projects.scss */
+.jumbotron-projects {
+  background-image: url("mountain.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  margin-bottom: 0px;
+  margin-top: -20px;
+  -webkit-box-shadow: 0px 5px 10px;
+          box-shadow: 0px 5px 10px;
+  position: absolute;
+  z-index: 2;
+}
+
+/* line 32, /home/ubuntu/workspace/app/assets/stylesheets/projects.scss */
+.projects {
+  padding-top: 400px;
+}
+
+/* line 35, /home/ubuntu/workspace/app/assets/stylesheets/projects.scss */
+.placeholder {
+  width: 700px;
+  height: 450px;
+  background: gray;
+  margin: 0 auto;
+}
+
+/* line 41, /home/ubuntu/workspace/app/assets/stylesheets/projects.scss */
+.projects-np {
+  margin-top: 225px;
+}
+
+/* line 44, /home/ubuntu/workspace/app/assets/stylesheets/projects.scss */
+.hidden-projects-np {
+  display: none;
+}
+
+/* line 47, /home/ubuntu/workspace/app/assets/stylesheets/projects.scss */
+.share {
+  text-align: center;
+}
+/* line 49, /home/ubuntu/workspace/app/assets/stylesheets/projects.scss */
+.share i {
+  padding: 20px;
+  cursor: pointer;
+}
+
+/* line 54, /home/ubuntu/workspace/app/assets/stylesheets/projects.scss */
+.project-title {
+  text-align: center;
+}
+/* line 1, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+pre {
+  background-color: #eee;
+  padding: 1.5rem 3.5%;
+  margin: 2rem 0;
+  border-radius: 5px;
+  overflow: auto;
+}
+
+/* line 10, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+code {
+  background-color: #eee;
+  padding: 1px 3px;
+  border-radius: 2px;
+}
+
+/* line 18, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.hll {
+  background-color: #ffffcc;
+}
+
+/* line 19, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.c {
+  color: #999988;
+  font-style: italic;
+}
+
+/* Comment */
+/* line 20, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.err {
+  color: #a61717;
+  background-color: #e3d2d2;
+}
+
+/* Error */
+/* line 21, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.k {
+  color: #000000;
+  font-weight: bold;
+}
+
+/* Keyword */
+/* line 22, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.o {
+  color: #000000;
+  font-weight: bold;
+}
+
+/* Operator */
+/* line 23, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.cm {
+  color: #999988;
+  font-style: italic;
+}
+
+/* Comment.Multiline */
+/* line 24, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.cp {
+  color: #999999;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Comment.Preproc */
+/* line 25, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.c1 {
+  color: #999988;
+  font-style: italic;
+}
+
+/* Comment.Single */
+/* line 26, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.cs {
+  color: #999999;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Comment.Special */
+/* line 27, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.gd {
+  color: #000000;
+  background-color: #ffdddd;
+}
+
+/* Generic.Deleted */
+/* line 28, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.ge {
+  color: #000000;
+  font-style: italic;
+}
+
+/* Generic.Emph */
+/* line 29, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.gr {
+  color: #aa0000;
+}
+
+/* Generic.Error */
+/* line 30, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.gh {
+  color: #999999;
+}
+
+/* Generic.Heading */
+/* line 31, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.gi {
+  color: #000000;
+  background-color: #ddffdd;
+}
+
+/* Generic.Inserted */
+/* line 32, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.go {
+  color: #888888;
+}
+
+/* Generic.Output */
+/* line 33, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.gp {
+  color: #555555;
+}
+
+/* Generic.Prompt */
+/* line 34, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.gs {
+  font-weight: bold;
+}
+
+/* Generic.Strong */
+/* line 35, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.gu {
+  color: #aaaaaa;
+}
+
+/* Generic.Subheading */
+/* line 36, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.gt {
+  color: #aa0000;
+}
+
+/* Generic.Traceback */
+/* line 37, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.kc {
+  color: #000000;
+  font-weight: bold;
+}
+
+/* Keyword.Constant */
+/* line 38, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.kd {
+  color: #000000;
+  font-weight: bold;
+}
+
+/* Keyword.Declaration */
+/* line 39, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.kn {
+  color: #000000;
+  font-weight: bold;
+}
+
+/* Keyword.Namespace */
+/* line 40, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.kp {
+  color: #000000;
+  font-weight: bold;
+}
+
+/* Keyword.Pseudo */
+/* line 41, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.kr {
+  color: #000000;
+  font-weight: bold;
+}
+
+/* Keyword.Reserved */
+/* line 42, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.kt {
+  color: #445588;
+  font-weight: bold;
+}
+
+/* Keyword.Type */
+/* line 43, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.m {
+  color: #009999;
+}
+
+/* Literal.Number */
+/* line 44, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.s {
+  color: #d01040;
+}
+
+/* Literal.String */
+/* line 45, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.na {
+  color: #008080;
+}
+
+/* Name.Attribute */
+/* line 46, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.nb {
+  color: #0086B3;
+}
+
+/* Name.Builtin */
+/* line 47, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.nc {
+  color: #445588;
+  font-weight: bold;
+}
+
+/* Name.Class */
+/* line 48, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.no {
+  color: #008080;
+}
+
+/* Name.Constant */
+/* line 49, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.nd {
+  color: #3c5d5d;
+  font-weight: bold;
+}
+
+/* Name.Decorator */
+/* line 50, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.ni {
+  color: #800080;
+}
+
+/* Name.Entity */
+/* line 51, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.ne {
+  color: #990000;
+  font-weight: bold;
+}
+
+/* Name.Exception */
+/* line 52, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.nf {
+  color: #990000;
+  font-weight: bold;
+}
+
+/* Name.Function */
+/* line 53, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.nl {
+  color: #990000;
+  font-weight: bold;
+}
+
+/* Name.Label */
+/* line 54, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.nn {
+  color: #555555;
+}
+
+/* Name.Namespace */
+/* line 55, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.nt {
+  color: #000080;
+}
+
+/* Name.Tag */
+/* line 56, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.nv {
+  color: #008080;
+}
+
+/* Name.Variable */
+/* line 57, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.ow {
+  color: #000000;
+  font-weight: bold;
+}
+
+/* Operator.Word */
+/* line 58, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.w {
+  color: #bbbbbb;
+}
+
+/* Text.Whitespace */
+/* line 59, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.mf {
+  color: #009999;
+}
+
+/* Literal.Number.Float */
+/* line 60, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.mh {
+  color: #009999;
+}
+
+/* Literal.Number.Hex */
+/* line 61, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.mi {
+  color: #009999;
+}
+
+/* Literal.Number.Integer */
+/* line 62, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.mo {
+  color: #009999;
+}
+
+/* Literal.Number.Oct */
+/* line 63, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.sb {
+  color: #d01040;
+}
+
+/* Literal.String.Backtick */
+/* line 64, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.sc {
+  color: #d01040;
+}
+
+/* Literal.String.Char */
+/* line 65, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.sd {
+  color: #d01040;
+}
+
+/* Literal.String.Doc */
+/* line 66, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.s2 {
+  color: #d01040;
+}
+
+/* Literal.String.Double */
+/* line 67, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.se {
+  color: #d01040;
+}
+
+/* Literal.String.Escape */
+/* line 68, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.sh {
+  color: #d01040;
+}
+
+/* Literal.String.Heredoc */
+/* line 69, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.si {
+  color: #d01040;
+}
+
+/* Literal.String.Interpol */
+/* line 70, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.sx {
+  color: #d01040;
+}
+
+/* Literal.String.Other */
+/* line 71, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.sr {
+  color: #009926;
+}
+
+/* Literal.String.Regex */
+/* line 72, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.s1 {
+  color: #d01040;
+}
+
+/* Literal.String.Single */
+/* line 73, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.ss {
+  color: #990073;
+}
+
+/* Literal.String.Symbol */
+/* line 74, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.bp {
+  color: #999999;
+}
+
+/* Name.Builtin.Pseudo */
+/* line 75, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.vc {
+  color: #008080;
+}
+
+/* Name.Variable.Class */
+/* line 76, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.vg {
+  color: #008080;
+}
+
+/* Name.Variable.Global */
+/* line 77, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.vi {
+  color: #008080;
+}
+
+/* Name.Variable.Instance */
+/* line 78, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.il {
+  color: #009999;
+}
+
+/* Literal.Number.Integer.Long */
 @charset "UTF-8";
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
@@ -59,7 +586,7 @@
 /* makes the font 33% larger relative to the icon container */
 /* line 5, /usr/local/rvm/gems/ruby-2.3.0/gems/font-awesome-sass-4.6.2/assets/stylesheets/font-awesome/_larger.scss */
 .fa-lg {
-  font-size: 1.33333333em;
+  font-size: 1.3333333333em;
   line-height: 0.75em;
   vertical-align: -15%;
 }
@@ -86,14 +613,14 @@
 
 /* line 3, /usr/local/rvm/gems/ruby-2.3.0/gems/font-awesome-sass-4.6.2/assets/stylesheets/font-awesome/_fixed-width.scss */
 .fa-fw {
-  width: 1.28571429em;
+  width: 1.2857142857em;
   text-align: center;
 }
 
 /* line 4, /usr/local/rvm/gems/ruby-2.3.0/gems/font-awesome-sass-4.6.2/assets/stylesheets/font-awesome/_list.scss */
 .fa-ul {
   padding-left: 0;
-  margin-left: 2.14285714em;
+  margin-left: 2.1428571429em;
   list-style-type: none;
 }
 /* line 8, /usr/local/rvm/gems/ruby-2.3.0/gems/font-awesome-sass-4.6.2/assets/stylesheets/font-awesome/_list.scss */
@@ -104,14 +631,14 @@
 /* line 10, /usr/local/rvm/gems/ruby-2.3.0/gems/font-awesome-sass-4.6.2/assets/stylesheets/font-awesome/_list.scss */
 .fa-li {
   position: absolute;
-  left: -2.14285714em;
-  width: 2.14285714em;
-  top: 0.14285714em;
+  left: -2.1428571429em;
+  width: 2.1428571429em;
+  top: 0.1428571429em;
   text-align: center;
 }
 /* line 16, /usr/local/rvm/gems/ruby-2.3.0/gems/font-awesome-sass-4.6.2/assets/stylesheets/font-awesome/_list.scss */
 .fa-li.fa-lg {
-  left: -1.85714286em;
+  left: -1.8571428571em;
 }
 
 /* line 4, /usr/local/rvm/gems/ruby-2.3.0/gems/font-awesome-sass-4.6.2/assets/stylesheets/font-awesome/_bordered-pulled.scss */
@@ -196,7 +723,6 @@
 .fa-rotate-90 {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
   -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 
@@ -204,7 +730,6 @@
 .fa-rotate-180 {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
   -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
@@ -212,7 +737,6 @@
 .fa-rotate-270 {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
   -webkit-transform: rotate(270deg);
-  -ms-transform: rotate(270deg);
   transform: rotate(270deg);
 }
 
@@ -220,7 +744,6 @@
 .fa-flip-horizontal {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
   -webkit-transform: scale(-1, 1);
-  -ms-transform: scale(-1, 1);
   transform: scale(-1, 1);
 }
 
@@ -228,7 +751,6 @@
 .fa-flip-vertical {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
   -webkit-transform: scale(1, -1);
-  -ms-transform: scale(1, -1);
   transform: scale(1, -1);
 }
 
@@ -238,7 +760,8 @@
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  filter: none;
+  -webkit-filter: none;
+          filter: none;
 }
 
 /* line 4, /usr/local/rvm/gems/ruby-2.3.0/gems/font-awesome-sass-4.6.2/assets/stylesheets/font-awesome/_stacked.scss */
@@ -3688,7 +4211,8 @@ figure {
 
 /* line 212, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_normalize.scss */
 hr {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   height: 0;
 }
 
@@ -3758,7 +4282,8 @@ input {
 /* line 334, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
 }
 
@@ -3771,7 +4296,8 @@ input[type="number"]::-webkit-outer-spin-button {
 /* line 356, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 
 /* line 367, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_normalize.scss */
@@ -3823,7 +4349,8 @@ th {
   *:after {
     background: transparent !important;
     color: #000 !important;
-    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
     text-shadow: none !important;
   }
 
@@ -5250,7 +5777,6 @@ th {
 /* line 11, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_scaffolding.scss */
 * {
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -5258,21 +5784,20 @@ th {
 *:before,
 *:after {
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 /* line 22, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_scaffolding.scss */
 html {
   font-size: 10px;
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 /* line 27, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_scaffolding.scss */
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
-  line-height: 1.42857143;
+  line-height: 1.428571429;
   color: #333333;
   background-color: #fff;
 }
@@ -5328,12 +5853,11 @@ img {
 /* line 93, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_scaffolding.scss */
 .img-thumbnail {
   padding: 4px;
-  line-height: 1.42857143;
+  line-height: 1.428571429;
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   display: inline-block;
   max-width: 100%;
@@ -5719,7 +6243,7 @@ dl {
 /* line 189, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_type.scss */
 dt,
 dd {
-  line-height: 1.42857143;
+  line-height: 1.428571429;
 }
 
 /* line 193, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_type.scss */
@@ -5789,7 +6313,7 @@ blockquote small,
 blockquote .small {
   display: block;
   font-size: 80%;
-  line-height: 1.42857143;
+  line-height: 1.428571429;
   color: #777777;
 }
 /* line 265, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_type.scss */
@@ -5831,7 +6355,7 @@ blockquote.pull-right .small:after {
 address {
   margin-bottom: 20px;
   font-style: normal;
-  line-height: 1.42857143;
+  line-height: 1.428571429;
 }
 
 /* line 7, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_code.scss */
@@ -5858,14 +6382,16 @@ kbd {
   color: #fff;
   background-color: #333;
   border-radius: 3px;
-  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 /* line 32, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_code.scss */
 kbd kbd {
   padding: 0;
   font-size: 100%;
   font-weight: bold;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 /* line 41, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_code.scss */
@@ -5874,7 +6400,7 @@ pre {
   padding: 9.5px;
   margin: 0 0 10px;
   font-size: 13px;
-  line-height: 1.42857143;
+  line-height: 1.428571429;
   word-break: break-all;
   word-wrap: break-word;
   color: #333333;
@@ -5980,12 +6506,12 @@ pre code {
 
 /* line 35, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .col-xs-1 {
-  width: 8.33333333%;
+  width: 8.3333333333%;
 }
 
 /* line 35, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .col-xs-2 {
-  width: 16.66666667%;
+  width: 16.6666666667%;
 }
 
 /* line 35, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -5995,12 +6521,12 @@ pre code {
 
 /* line 35, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .col-xs-4 {
-  width: 33.33333333%;
+  width: 33.3333333333%;
 }
 
 /* line 35, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .col-xs-5 {
-  width: 41.66666667%;
+  width: 41.6666666667%;
 }
 
 /* line 35, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6010,12 +6536,12 @@ pre code {
 
 /* line 35, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .col-xs-7 {
-  width: 58.33333333%;
+  width: 58.3333333333%;
 }
 
 /* line 35, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .col-xs-8 {
-  width: 66.66666667%;
+  width: 66.6666666667%;
 }
 
 /* line 35, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6025,12 +6551,12 @@ pre code {
 
 /* line 35, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .col-xs-10 {
-  width: 83.33333333%;
+  width: 83.3333333333%;
 }
 
 /* line 35, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .col-xs-11 {
-  width: 91.66666667%;
+  width: 91.6666666667%;
 }
 
 /* line 35, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6045,12 +6571,12 @@ pre code {
 
 /* line 50, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .col-xs-pull-1 {
-  right: 8.33333333%;
+  right: 8.3333333333%;
 }
 
 /* line 50, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .col-xs-pull-2 {
-  right: 16.66666667%;
+  right: 16.6666666667%;
 }
 
 /* line 50, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6060,12 +6586,12 @@ pre code {
 
 /* line 50, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .col-xs-pull-4 {
-  right: 33.33333333%;
+  right: 33.3333333333%;
 }
 
 /* line 50, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .col-xs-pull-5 {
-  right: 41.66666667%;
+  right: 41.6666666667%;
 }
 
 /* line 50, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6075,12 +6601,12 @@ pre code {
 
 /* line 50, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .col-xs-pull-7 {
-  right: 58.33333333%;
+  right: 58.3333333333%;
 }
 
 /* line 50, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .col-xs-pull-8 {
-  right: 66.66666667%;
+  right: 66.6666666667%;
 }
 
 /* line 50, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6090,12 +6616,12 @@ pre code {
 
 /* line 50, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .col-xs-pull-10 {
-  right: 83.33333333%;
+  right: 83.3333333333%;
 }
 
 /* line 50, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .col-xs-pull-11 {
-  right: 91.66666667%;
+  right: 91.6666666667%;
 }
 
 /* line 50, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6110,12 +6636,12 @@ pre code {
 
 /* line 40, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .col-xs-push-1 {
-  left: 8.33333333%;
+  left: 8.3333333333%;
 }
 
 /* line 40, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .col-xs-push-2 {
-  left: 16.66666667%;
+  left: 16.6666666667%;
 }
 
 /* line 40, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6125,12 +6651,12 @@ pre code {
 
 /* line 40, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .col-xs-push-4 {
-  left: 33.33333333%;
+  left: 33.3333333333%;
 }
 
 /* line 40, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .col-xs-push-5 {
-  left: 41.66666667%;
+  left: 41.6666666667%;
 }
 
 /* line 40, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6140,12 +6666,12 @@ pre code {
 
 /* line 40, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .col-xs-push-7 {
-  left: 58.33333333%;
+  left: 58.3333333333%;
 }
 
 /* line 40, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .col-xs-push-8 {
-  left: 66.66666667%;
+  left: 66.6666666667%;
 }
 
 /* line 40, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6155,12 +6681,12 @@ pre code {
 
 /* line 40, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .col-xs-push-10 {
-  left: 83.33333333%;
+  left: 83.3333333333%;
 }
 
 /* line 40, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .col-xs-push-11 {
-  left: 91.66666667%;
+  left: 91.6666666667%;
 }
 
 /* line 40, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6175,12 +6701,12 @@ pre code {
 
 /* line 60, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .col-xs-offset-1 {
-  margin-left: 8.33333333%;
+  margin-left: 8.3333333333%;
 }
 
 /* line 60, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .col-xs-offset-2 {
-  margin-left: 16.66666667%;
+  margin-left: 16.6666666667%;
 }
 
 /* line 60, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6190,12 +6716,12 @@ pre code {
 
 /* line 60, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .col-xs-offset-4 {
-  margin-left: 33.33333333%;
+  margin-left: 33.3333333333%;
 }
 
 /* line 60, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .col-xs-offset-5 {
-  margin-left: 41.66666667%;
+  margin-left: 41.6666666667%;
 }
 
 /* line 60, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6205,12 +6731,12 @@ pre code {
 
 /* line 60, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .col-xs-offset-7 {
-  margin-left: 58.33333333%;
+  margin-left: 58.3333333333%;
 }
 
 /* line 60, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .col-xs-offset-8 {
-  margin-left: 66.66666667%;
+  margin-left: 66.6666666667%;
 }
 
 /* line 60, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6220,12 +6746,12 @@ pre code {
 
 /* line 60, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .col-xs-offset-10 {
-  margin-left: 83.33333333%;
+  margin-left: 83.3333333333%;
 }
 
 /* line 60, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .col-xs-offset-11 {
-  margin-left: 91.66666667%;
+  margin-left: 91.6666666667%;
 }
 
 /* line 60, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6241,12 +6767,12 @@ pre code {
 
   /* line 35, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-sm-1 {
-    width: 8.33333333%;
+    width: 8.3333333333%;
   }
 
   /* line 35, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-sm-2 {
-    width: 16.66666667%;
+    width: 16.6666666667%;
   }
 
   /* line 35, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6256,12 +6782,12 @@ pre code {
 
   /* line 35, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-sm-4 {
-    width: 33.33333333%;
+    width: 33.3333333333%;
   }
 
   /* line 35, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-sm-5 {
-    width: 41.66666667%;
+    width: 41.6666666667%;
   }
 
   /* line 35, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6271,12 +6797,12 @@ pre code {
 
   /* line 35, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-sm-7 {
-    width: 58.33333333%;
+    width: 58.3333333333%;
   }
 
   /* line 35, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-sm-8 {
-    width: 66.66666667%;
+    width: 66.6666666667%;
   }
 
   /* line 35, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6286,12 +6812,12 @@ pre code {
 
   /* line 35, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-sm-10 {
-    width: 83.33333333%;
+    width: 83.3333333333%;
   }
 
   /* line 35, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-sm-11 {
-    width: 91.66666667%;
+    width: 91.6666666667%;
   }
 
   /* line 35, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6306,12 +6832,12 @@ pre code {
 
   /* line 50, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-sm-pull-1 {
-    right: 8.33333333%;
+    right: 8.3333333333%;
   }
 
   /* line 50, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-sm-pull-2 {
-    right: 16.66666667%;
+    right: 16.6666666667%;
   }
 
   /* line 50, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6321,12 +6847,12 @@ pre code {
 
   /* line 50, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-sm-pull-4 {
-    right: 33.33333333%;
+    right: 33.3333333333%;
   }
 
   /* line 50, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-sm-pull-5 {
-    right: 41.66666667%;
+    right: 41.6666666667%;
   }
 
   /* line 50, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6336,12 +6862,12 @@ pre code {
 
   /* line 50, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-sm-pull-7 {
-    right: 58.33333333%;
+    right: 58.3333333333%;
   }
 
   /* line 50, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-sm-pull-8 {
-    right: 66.66666667%;
+    right: 66.6666666667%;
   }
 
   /* line 50, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6351,12 +6877,12 @@ pre code {
 
   /* line 50, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-sm-pull-10 {
-    right: 83.33333333%;
+    right: 83.3333333333%;
   }
 
   /* line 50, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-sm-pull-11 {
-    right: 91.66666667%;
+    right: 91.6666666667%;
   }
 
   /* line 50, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6371,12 +6897,12 @@ pre code {
 
   /* line 40, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-sm-push-1 {
-    left: 8.33333333%;
+    left: 8.3333333333%;
   }
 
   /* line 40, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-sm-push-2 {
-    left: 16.66666667%;
+    left: 16.6666666667%;
   }
 
   /* line 40, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6386,12 +6912,12 @@ pre code {
 
   /* line 40, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-sm-push-4 {
-    left: 33.33333333%;
+    left: 33.3333333333%;
   }
 
   /* line 40, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-sm-push-5 {
-    left: 41.66666667%;
+    left: 41.6666666667%;
   }
 
   /* line 40, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6401,12 +6927,12 @@ pre code {
 
   /* line 40, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-sm-push-7 {
-    left: 58.33333333%;
+    left: 58.3333333333%;
   }
 
   /* line 40, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-sm-push-8 {
-    left: 66.66666667%;
+    left: 66.6666666667%;
   }
 
   /* line 40, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6416,12 +6942,12 @@ pre code {
 
   /* line 40, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-sm-push-10 {
-    left: 83.33333333%;
+    left: 83.3333333333%;
   }
 
   /* line 40, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-sm-push-11 {
-    left: 91.66666667%;
+    left: 91.6666666667%;
   }
 
   /* line 40, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6436,12 +6962,12 @@ pre code {
 
   /* line 60, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-sm-offset-1 {
-    margin-left: 8.33333333%;
+    margin-left: 8.3333333333%;
   }
 
   /* line 60, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-sm-offset-2 {
-    margin-left: 16.66666667%;
+    margin-left: 16.6666666667%;
   }
 
   /* line 60, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6451,12 +6977,12 @@ pre code {
 
   /* line 60, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-sm-offset-4 {
-    margin-left: 33.33333333%;
+    margin-left: 33.3333333333%;
   }
 
   /* line 60, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-sm-offset-5 {
-    margin-left: 41.66666667%;
+    margin-left: 41.6666666667%;
   }
 
   /* line 60, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6466,12 +6992,12 @@ pre code {
 
   /* line 60, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-sm-offset-7 {
-    margin-left: 58.33333333%;
+    margin-left: 58.3333333333%;
   }
 
   /* line 60, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-sm-offset-8 {
-    margin-left: 66.66666667%;
+    margin-left: 66.6666666667%;
   }
 
   /* line 60, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6481,12 +7007,12 @@ pre code {
 
   /* line 60, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-sm-offset-10 {
-    margin-left: 83.33333333%;
+    margin-left: 83.3333333333%;
   }
 
   /* line 60, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-sm-offset-11 {
-    margin-left: 91.66666667%;
+    margin-left: 91.6666666667%;
   }
 
   /* line 60, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6502,12 +7028,12 @@ pre code {
 
   /* line 35, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-md-1 {
-    width: 8.33333333%;
+    width: 8.3333333333%;
   }
 
   /* line 35, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-md-2 {
-    width: 16.66666667%;
+    width: 16.6666666667%;
   }
 
   /* line 35, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6517,12 +7043,12 @@ pre code {
 
   /* line 35, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-md-4 {
-    width: 33.33333333%;
+    width: 33.3333333333%;
   }
 
   /* line 35, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-md-5 {
-    width: 41.66666667%;
+    width: 41.6666666667%;
   }
 
   /* line 35, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6532,12 +7058,12 @@ pre code {
 
   /* line 35, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-md-7 {
-    width: 58.33333333%;
+    width: 58.3333333333%;
   }
 
   /* line 35, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-md-8 {
-    width: 66.66666667%;
+    width: 66.6666666667%;
   }
 
   /* line 35, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6547,12 +7073,12 @@ pre code {
 
   /* line 35, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-md-10 {
-    width: 83.33333333%;
+    width: 83.3333333333%;
   }
 
   /* line 35, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-md-11 {
-    width: 91.66666667%;
+    width: 91.6666666667%;
   }
 
   /* line 35, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6567,12 +7093,12 @@ pre code {
 
   /* line 50, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-md-pull-1 {
-    right: 8.33333333%;
+    right: 8.3333333333%;
   }
 
   /* line 50, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-md-pull-2 {
-    right: 16.66666667%;
+    right: 16.6666666667%;
   }
 
   /* line 50, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6582,12 +7108,12 @@ pre code {
 
   /* line 50, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-md-pull-4 {
-    right: 33.33333333%;
+    right: 33.3333333333%;
   }
 
   /* line 50, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-md-pull-5 {
-    right: 41.66666667%;
+    right: 41.6666666667%;
   }
 
   /* line 50, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6597,12 +7123,12 @@ pre code {
 
   /* line 50, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-md-pull-7 {
-    right: 58.33333333%;
+    right: 58.3333333333%;
   }
 
   /* line 50, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-md-pull-8 {
-    right: 66.66666667%;
+    right: 66.6666666667%;
   }
 
   /* line 50, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6612,12 +7138,12 @@ pre code {
 
   /* line 50, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-md-pull-10 {
-    right: 83.33333333%;
+    right: 83.3333333333%;
   }
 
   /* line 50, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-md-pull-11 {
-    right: 91.66666667%;
+    right: 91.6666666667%;
   }
 
   /* line 50, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6632,12 +7158,12 @@ pre code {
 
   /* line 40, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-md-push-1 {
-    left: 8.33333333%;
+    left: 8.3333333333%;
   }
 
   /* line 40, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-md-push-2 {
-    left: 16.66666667%;
+    left: 16.6666666667%;
   }
 
   /* line 40, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6647,12 +7173,12 @@ pre code {
 
   /* line 40, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-md-push-4 {
-    left: 33.33333333%;
+    left: 33.3333333333%;
   }
 
   /* line 40, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-md-push-5 {
-    left: 41.66666667%;
+    left: 41.6666666667%;
   }
 
   /* line 40, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6662,12 +7188,12 @@ pre code {
 
   /* line 40, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-md-push-7 {
-    left: 58.33333333%;
+    left: 58.3333333333%;
   }
 
   /* line 40, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-md-push-8 {
-    left: 66.66666667%;
+    left: 66.6666666667%;
   }
 
   /* line 40, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6677,12 +7203,12 @@ pre code {
 
   /* line 40, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-md-push-10 {
-    left: 83.33333333%;
+    left: 83.3333333333%;
   }
 
   /* line 40, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-md-push-11 {
-    left: 91.66666667%;
+    left: 91.6666666667%;
   }
 
   /* line 40, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6697,12 +7223,12 @@ pre code {
 
   /* line 60, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-md-offset-1 {
-    margin-left: 8.33333333%;
+    margin-left: 8.3333333333%;
   }
 
   /* line 60, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-md-offset-2 {
-    margin-left: 16.66666667%;
+    margin-left: 16.6666666667%;
   }
 
   /* line 60, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6712,12 +7238,12 @@ pre code {
 
   /* line 60, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-md-offset-4 {
-    margin-left: 33.33333333%;
+    margin-left: 33.3333333333%;
   }
 
   /* line 60, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-md-offset-5 {
-    margin-left: 41.66666667%;
+    margin-left: 41.6666666667%;
   }
 
   /* line 60, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6727,12 +7253,12 @@ pre code {
 
   /* line 60, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-md-offset-7 {
-    margin-left: 58.33333333%;
+    margin-left: 58.3333333333%;
   }
 
   /* line 60, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-md-offset-8 {
-    margin-left: 66.66666667%;
+    margin-left: 66.6666666667%;
   }
 
   /* line 60, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6742,12 +7268,12 @@ pre code {
 
   /* line 60, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-md-offset-10 {
-    margin-left: 83.33333333%;
+    margin-left: 83.3333333333%;
   }
 
   /* line 60, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-md-offset-11 {
-    margin-left: 91.66666667%;
+    margin-left: 91.6666666667%;
   }
 
   /* line 60, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6763,12 +7289,12 @@ pre code {
 
   /* line 35, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-lg-1 {
-    width: 8.33333333%;
+    width: 8.3333333333%;
   }
 
   /* line 35, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-lg-2 {
-    width: 16.66666667%;
+    width: 16.6666666667%;
   }
 
   /* line 35, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6778,12 +7304,12 @@ pre code {
 
   /* line 35, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-lg-4 {
-    width: 33.33333333%;
+    width: 33.3333333333%;
   }
 
   /* line 35, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-lg-5 {
-    width: 41.66666667%;
+    width: 41.6666666667%;
   }
 
   /* line 35, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6793,12 +7319,12 @@ pre code {
 
   /* line 35, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-lg-7 {
-    width: 58.33333333%;
+    width: 58.3333333333%;
   }
 
   /* line 35, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-lg-8 {
-    width: 66.66666667%;
+    width: 66.6666666667%;
   }
 
   /* line 35, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6808,12 +7334,12 @@ pre code {
 
   /* line 35, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-lg-10 {
-    width: 83.33333333%;
+    width: 83.3333333333%;
   }
 
   /* line 35, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-lg-11 {
-    width: 91.66666667%;
+    width: 91.6666666667%;
   }
 
   /* line 35, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6828,12 +7354,12 @@ pre code {
 
   /* line 50, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-lg-pull-1 {
-    right: 8.33333333%;
+    right: 8.3333333333%;
   }
 
   /* line 50, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-lg-pull-2 {
-    right: 16.66666667%;
+    right: 16.6666666667%;
   }
 
   /* line 50, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6843,12 +7369,12 @@ pre code {
 
   /* line 50, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-lg-pull-4 {
-    right: 33.33333333%;
+    right: 33.3333333333%;
   }
 
   /* line 50, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-lg-pull-5 {
-    right: 41.66666667%;
+    right: 41.6666666667%;
   }
 
   /* line 50, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6858,12 +7384,12 @@ pre code {
 
   /* line 50, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-lg-pull-7 {
-    right: 58.33333333%;
+    right: 58.3333333333%;
   }
 
   /* line 50, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-lg-pull-8 {
-    right: 66.66666667%;
+    right: 66.6666666667%;
   }
 
   /* line 50, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6873,12 +7399,12 @@ pre code {
 
   /* line 50, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-lg-pull-10 {
-    right: 83.33333333%;
+    right: 83.3333333333%;
   }
 
   /* line 50, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-lg-pull-11 {
-    right: 91.66666667%;
+    right: 91.6666666667%;
   }
 
   /* line 50, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6893,12 +7419,12 @@ pre code {
 
   /* line 40, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-lg-push-1 {
-    left: 8.33333333%;
+    left: 8.3333333333%;
   }
 
   /* line 40, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-lg-push-2 {
-    left: 16.66666667%;
+    left: 16.6666666667%;
   }
 
   /* line 40, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6908,12 +7434,12 @@ pre code {
 
   /* line 40, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-lg-push-4 {
-    left: 33.33333333%;
+    left: 33.3333333333%;
   }
 
   /* line 40, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-lg-push-5 {
-    left: 41.66666667%;
+    left: 41.6666666667%;
   }
 
   /* line 40, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6923,12 +7449,12 @@ pre code {
 
   /* line 40, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-lg-push-7 {
-    left: 58.33333333%;
+    left: 58.3333333333%;
   }
 
   /* line 40, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-lg-push-8 {
-    left: 66.66666667%;
+    left: 66.6666666667%;
   }
 
   /* line 40, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6938,12 +7464,12 @@ pre code {
 
   /* line 40, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-lg-push-10 {
-    left: 83.33333333%;
+    left: 83.3333333333%;
   }
 
   /* line 40, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-lg-push-11 {
-    left: 91.66666667%;
+    left: 91.6666666667%;
   }
 
   /* line 40, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6958,12 +7484,12 @@ pre code {
 
   /* line 60, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-lg-offset-1 {
-    margin-left: 8.33333333%;
+    margin-left: 8.3333333333%;
   }
 
   /* line 60, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-lg-offset-2 {
-    margin-left: 16.66666667%;
+    margin-left: 16.6666666667%;
   }
 
   /* line 60, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6973,12 +7499,12 @@ pre code {
 
   /* line 60, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-lg-offset-4 {
-    margin-left: 33.33333333%;
+    margin-left: 33.3333333333%;
   }
 
   /* line 60, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-lg-offset-5 {
-    margin-left: 41.66666667%;
+    margin-left: 41.6666666667%;
   }
 
   /* line 60, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6988,12 +7514,12 @@ pre code {
 
   /* line 60, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-lg-offset-7 {
-    margin-left: 58.33333333%;
+    margin-left: 58.3333333333%;
   }
 
   /* line 60, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-lg-offset-8 {
-    margin-left: 66.66666667%;
+    margin-left: 66.6666666667%;
   }
 
   /* line 60, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -7003,12 +7529,12 @@ pre code {
 
   /* line 60, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-lg-offset-10 {
-    margin-left: 83.33333333%;
+    margin-left: 83.3333333333%;
   }
 
   /* line 60, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-lg-offset-11 {
-    margin-left: 91.66666667%;
+    margin-left: 91.6666666667%;
   }
 
   /* line 60, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -7048,7 +7574,7 @@ th {
 .table > tfoot > tr > th,
 .table > tfoot > tr > td {
   padding: 8px;
-  line-height: 1.42857143;
+  line-height: 1.428571429;
   vertical-align: top;
   border-top: 1px solid #ddd;
 }
@@ -7319,7 +7845,6 @@ label {
 /* line 47, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_forms.scss */
 input[type="search"] {
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -7361,7 +7886,7 @@ output {
   display: block;
   padding-top: 7px;
   font-size: 14px;
-  line-height: 1.42857143;
+  line-height: 1.428571429;
   color: #555555;
 }
 
@@ -7372,7 +7897,7 @@ output {
   height: 34px;
   padding: 6px 12px;
   font-size: 14px;
-  line-height: 1.42857143;
+  line-height: 1.428571429;
   color: #555555;
   background-color: #fff;
   background-image: none;
@@ -7381,8 +7906,10 @@ output {
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
-  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
 }
 /* line 57, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_forms.scss */
 .form-control:focus {
@@ -7444,39 +7971,30 @@ input[type="search"] {
   input[type="time"].input-sm,
   .input-group-sm > input[type="time"].form-control,
   .input-group-sm > input[type="time"].input-group-addon,
-  .input-group-sm > .input-group-btn > input[type="time"].btn, .input-group-sm
-  input[type="time"],
+  .input-group-sm > .input-group-btn > input[type="time"].btn,
+  .input-group-sm input[type="time"],
   input[type="datetime-local"].input-sm,
   .input-group-sm > input[type="datetime-local"].form-control,
   .input-group-sm > input[type="datetime-local"].input-group-addon,
-  .input-group-sm > .input-group-btn > input[type="datetime-local"].btn, .input-group-sm
-  input[type="datetime-local"],
+  .input-group-sm > .input-group-btn > input[type="datetime-local"].btn,
+  .input-group-sm input[type="datetime-local"],
   input[type="month"].input-sm,
   .input-group-sm > input[type="month"].form-control,
   .input-group-sm > input[type="month"].input-group-addon,
-  .input-group-sm > .input-group-btn > input[type="month"].btn, .input-group-sm
-  input[type="month"] {
+  .input-group-sm > .input-group-btn > input[type="month"].btn,
+  .input-group-sm input[type="month"] {
     line-height: 30px;
   }
   /* line 202, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_forms.scss */
   input[type="date"].input-lg, .input-group-lg > input[type="date"].form-control,
   .input-group-lg > input[type="date"].input-group-addon,
-  .input-group-lg > .input-group-btn > input[type="date"].btn, .input-group-lg input[type="date"],
-  input[type="time"].input-lg,
-  .input-group-lg > input[type="time"].form-control,
+  .input-group-lg > .input-group-btn > input[type="date"].btn, .input-group-lg input[type="date"], input[type="time"].input-lg, .input-group-lg > input[type="time"].form-control,
   .input-group-lg > input[type="time"].input-group-addon,
-  .input-group-lg > .input-group-btn > input[type="time"].btn, .input-group-lg
-  input[type="time"],
-  input[type="datetime-local"].input-lg,
-  .input-group-lg > input[type="datetime-local"].form-control,
+  .input-group-lg > .input-group-btn > input[type="time"].btn, .input-group-lg input[type="time"], input[type="datetime-local"].input-lg, .input-group-lg > input[type="datetime-local"].form-control,
   .input-group-lg > input[type="datetime-local"].input-group-addon,
-  .input-group-lg > .input-group-btn > input[type="datetime-local"].btn, .input-group-lg
-  input[type="datetime-local"],
-  input[type="month"].input-lg,
-  .input-group-lg > input[type="month"].form-control,
+  .input-group-lg > .input-group-btn > input[type="datetime-local"].btn, .input-group-lg input[type="datetime-local"], input[type="month"].input-lg, .input-group-lg > input[type="month"].form-control,
   .input-group-lg > input[type="month"].input-group-addon,
-  .input-group-lg > .input-group-btn > input[type="month"].btn, .input-group-lg
-  input[type="month"] {
+  .input-group-lg > .input-group-btn > input[type="month"].btn, .input-group-lg input[type="month"] {
     line-height: 46px;
   }
 }
@@ -7541,22 +8059,22 @@ input[type="search"] {
 /* line 276, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_forms.scss */
 input[type="radio"][disabled], input[type="radio"].disabled, fieldset[disabled] input[type="radio"],
 input[type="checkbox"][disabled],
-input[type="checkbox"].disabled, fieldset[disabled]
-input[type="checkbox"] {
+input[type="checkbox"].disabled,
+fieldset[disabled] input[type="checkbox"] {
   cursor: not-allowed;
 }
 
 /* line 285, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_forms.scss */
 .radio-inline.disabled, fieldset[disabled] .radio-inline,
-.checkbox-inline.disabled, fieldset[disabled]
-.checkbox-inline {
+.checkbox-inline.disabled,
+fieldset[disabled] .checkbox-inline {
   cursor: not-allowed;
 }
 
 /* line 295, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_forms.scss */
 .radio.disabled label, fieldset[disabled] .radio label,
-.checkbox.disabled label, fieldset[disabled]
-.checkbox label {
+.checkbox.disabled label,
+fieldset[disabled] .checkbox label {
   cursor: not-allowed;
 }
 
@@ -7973,14 +8491,15 @@ select[multiple].input-lg,
   font-weight: normal;
   text-align: center;
   vertical-align: middle;
-  touch-action: manipulation;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
   cursor: pointer;
   background-image: none;
   border: 1px solid transparent;
   white-space: nowrap;
   padding: 6px 12px;
   font-size: 14px;
-  line-height: 1.42857143;
+  line-height: 1.428571429;
   border-radius: 4px;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -8362,7 +8881,6 @@ input[type="button"].btn-block {
 .fade {
   opacity: 0;
   -webkit-transition: opacity 0.15s linear;
-  -o-transition: opacity 0.15s linear;
   transition: opacity 0.15s linear;
 }
 /* line 13, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_component-animations.scss */
@@ -8466,7 +8984,7 @@ tbody.collapse.in {
   padding: 3px 20px;
   clear: both;
   font-weight: normal;
-  line-height: 1.42857143;
+  line-height: 1.428571429;
   color: #333333;
   white-space: nowrap;
 }
@@ -8525,7 +9043,7 @@ tbody.collapse.in {
   display: block;
   padding: 3px 20px;
   font-size: 12px;
-  line-height: 1.42857143;
+  line-height: 1.428571429;
   color: #777777;
   white-space: nowrap;
 }
@@ -9036,7 +9554,7 @@ tbody.collapse.in {
 /* line 84, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_navs.scss */
 .nav-tabs > li > a {
   margin-right: 2px;
-  line-height: 1.42857143;
+  line-height: 1.428571429;
   border: 1px solid transparent;
   border-radius: 4px 4px 0 0;
 }
@@ -9205,7 +9723,8 @@ tbody.collapse.in {
   padding-right: 15px;
   padding-left: 15px;
   border-top: 1px solid transparent;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
   -webkit-overflow-scrolling: touch;
 }
 /* line 14, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
@@ -9226,7 +9745,8 @@ tbody.collapse.in {
   .navbar-collapse {
     width: auto;
     border-top: 0;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
   /* line 68, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-collapse.collapse {
@@ -9396,7 +9916,8 @@ tbody.collapse.in {
     margin-top: 0;
     background-color: transparent;
     border: 0;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
   /* line 251, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-nav .open .dropdown-menu > li > a,
@@ -9838,7 +10359,7 @@ tbody.collapse.in {
   position: relative;
   float: left;
   padding: 6px 12px;
-  line-height: 1.42857143;
+  line-height: 1.428571429;
   text-decoration: none;
   color: #337ab7;
   background-color: #fff;
@@ -10180,12 +10701,11 @@ a.badge:hover, a.badge:focus {
   display: block;
   padding: 4px;
   margin-bottom: 20px;
-  line-height: 1.42857143;
+  line-height: 1.428571429;
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 4px;
   -webkit-transition: border 0.2s ease-in-out;
-  -o-transition: border 0.2s ease-in-out;
   transition: border 0.2s ease-in-out;
 }
 /* line 17, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_thumbnails.scss */
@@ -10350,15 +10870,12 @@ a.thumbnail.active {
   -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   -webkit-transition: width 0.6s ease;
-  -o-transition: width 0.6s ease;
   transition: width 0.6s ease;
 }
 
 /* line 54, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_progress-bars.scss */
 .progress-striped .progress-bar,
 .progress-bar-striped {
-  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-size: 40px 40px;
 }
@@ -10367,7 +10884,6 @@ a.thumbnail.active {
 .progress.active .progress-bar,
 .progress-bar.active {
   -webkit-animation: progress-bar-stripes 2s linear infinite;
-  -o-animation: progress-bar-stripes 2s linear infinite;
   animation: progress-bar-stripes 2s linear infinite;
 }
 
@@ -10377,8 +10893,6 @@ a.thumbnail.active {
 }
 /* line 7, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_progress-bar.scss */
 .progress-striped .progress-bar-success {
-  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 
@@ -10388,8 +10902,6 @@ a.thumbnail.active {
 }
 /* line 7, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_progress-bar.scss */
 .progress-striped .progress-bar-info {
-  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 
@@ -10399,8 +10911,6 @@ a.thumbnail.active {
 }
 /* line 7, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_progress-bar.scss */
 .progress-striped .progress-bar-warning {
-  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 
@@ -10410,8 +10920,6 @@ a.thumbnail.active {
 }
 /* line 7, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_progress-bar.scss */
 .progress-striped .progress-bar-danger {
-  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 
@@ -11268,19 +11776,15 @@ button.close {
 /* line 32, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_modals.scss */
 .modal.fade .modal-dialog {
   -webkit-transform: translate(0, -25%);
-  -ms-transform: translate(0, -25%);
-  -o-transform: translate(0, -25%);
   transform: translate(0, -25%);
   -webkit-transition: -webkit-transform 0.3s ease-out;
-  -moz-transition: -moz-transform 0.3s ease-out;
-  -o-transition: -o-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
 }
 /* line 36, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_modals.scss */
 .modal.in .modal-dialog {
   -webkit-transform: translate(0, 0);
-  -ms-transform: translate(0, 0);
-  -o-transform: translate(0, 0);
   transform: translate(0, 0);
 }
 
@@ -11354,7 +11858,7 @@ button.close {
 /* line 90, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_modals.scss */
 .modal-title {
   margin: 0;
-  line-height: 1.42857143;
+  line-height: 1.428571429;
 }
 
 /* line 97, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_modals.scss */
@@ -11435,7 +11939,7 @@ button.close {
   font-weight: normal;
   letter-spacing: normal;
   line-break: auto;
-  line-height: 1.42857143;
+  line-height: 1.428571429;
   text-align: left;
   text-align: start;
   text-decoration: none;
@@ -11573,7 +12077,7 @@ button.close {
   font-weight: normal;
   letter-spacing: normal;
   line-break: auto;
-  line-height: 1.42857143;
+  line-height: 1.428571429;
   text-align: left;
   text-align: start;
   text-decoration: none;
@@ -11730,7 +12234,6 @@ button.close {
   display: none;
   position: relative;
   -webkit-transition: 0.6s ease-in-out left;
-  -o-transition: 0.6s ease-in-out left;
   transition: 0.6s ease-in-out left;
 }
 /* line 22, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_carousel.scss */
@@ -11745,14 +12248,12 @@ button.close {
   /* line 16, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_carousel.scss */
   .carousel-inner > .item {
     -webkit-transition: -webkit-transform 0.6s ease-in-out;
-    -moz-transition: -moz-transform 0.6s ease-in-out;
-    -o-transition: -o-transform 0.6s ease-in-out;
+    transition: -webkit-transform 0.6s ease-in-out;
     transition: transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
     -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
     backface-visibility: hidden;
     -webkit-perspective: 1000px;
-    -moz-perspective: 1000px;
     perspective: 1000px;
   }
   /* line 34, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_carousel.scss */
@@ -11826,12 +12327,11 @@ button.close {
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0);
 }
 /* line 109, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_carousel.scss */
 .carousel-control.left {
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
-  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.0001)));
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
@@ -11840,8 +12340,7 @@ button.close {
 .carousel-control.right {
   left: auto;
   right: 0;
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
-  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.5)));
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
@@ -11917,7 +12416,7 @@ button.close {
   border-radius: 10px;
   cursor: pointer;
   background-color: #000 \9;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0);
 }
 /* line 207, /usr/local/rvm/gems/ruby-2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_carousel.scss */
 .carousel-indicators .active {
@@ -12341,7 +12840,413 @@ button.close {
     display: none !important;
   }
 }
-/* line 22, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+/* line 1, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+pre {
+  background-color: #eee;
+  padding: 1.5rem 3.5%;
+  margin: 2rem 0;
+  border-radius: 5px;
+  overflow: auto;
+}
+
+/* line 10, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+code {
+  background-color: #eee;
+  padding: 1px 3px;
+  border-radius: 2px;
+}
+
+/* line 18, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.hll {
+  background-color: #ffffcc;
+}
+
+/* line 19, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.c {
+  color: #999988;
+  font-style: italic;
+}
+
+/* Comment */
+/* line 20, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.err {
+  color: #a61717;
+  background-color: #e3d2d2;
+}
+
+/* Error */
+/* line 21, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.k {
+  color: #000000;
+  font-weight: bold;
+}
+
+/* Keyword */
+/* line 22, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.o {
+  color: #000000;
+  font-weight: bold;
+}
+
+/* Operator */
+/* line 23, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.cm {
+  color: #999988;
+  font-style: italic;
+}
+
+/* Comment.Multiline */
+/* line 24, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.cp {
+  color: #999999;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Comment.Preproc */
+/* line 25, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.c1 {
+  color: #999988;
+  font-style: italic;
+}
+
+/* Comment.Single */
+/* line 26, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.cs {
+  color: #999999;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Comment.Special */
+/* line 27, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.gd {
+  color: #000000;
+  background-color: #ffdddd;
+}
+
+/* Generic.Deleted */
+/* line 28, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.ge {
+  color: #000000;
+  font-style: italic;
+}
+
+/* Generic.Emph */
+/* line 29, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.gr {
+  color: #aa0000;
+}
+
+/* Generic.Error */
+/* line 30, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.gh {
+  color: #999999;
+}
+
+/* Generic.Heading */
+/* line 31, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.gi {
+  color: #000000;
+  background-color: #ddffdd;
+}
+
+/* Generic.Inserted */
+/* line 32, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.go {
+  color: #888888;
+}
+
+/* Generic.Output */
+/* line 33, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.gp {
+  color: #555555;
+}
+
+/* Generic.Prompt */
+/* line 34, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.gs {
+  font-weight: bold;
+}
+
+/* Generic.Strong */
+/* line 35, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.gu {
+  color: #aaaaaa;
+}
+
+/* Generic.Subheading */
+/* line 36, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.gt {
+  color: #aa0000;
+}
+
+/* Generic.Traceback */
+/* line 37, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.kc {
+  color: #000000;
+  font-weight: bold;
+}
+
+/* Keyword.Constant */
+/* line 38, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.kd {
+  color: #000000;
+  font-weight: bold;
+}
+
+/* Keyword.Declaration */
+/* line 39, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.kn {
+  color: #000000;
+  font-weight: bold;
+}
+
+/* Keyword.Namespace */
+/* line 40, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.kp {
+  color: #000000;
+  font-weight: bold;
+}
+
+/* Keyword.Pseudo */
+/* line 41, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.kr {
+  color: #000000;
+  font-weight: bold;
+}
+
+/* Keyword.Reserved */
+/* line 42, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.kt {
+  color: #445588;
+  font-weight: bold;
+}
+
+/* Keyword.Type */
+/* line 43, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.m {
+  color: #009999;
+}
+
+/* Literal.Number */
+/* line 44, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.s {
+  color: #d01040;
+}
+
+/* Literal.String */
+/* line 45, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.na {
+  color: #008080;
+}
+
+/* Name.Attribute */
+/* line 46, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.nb {
+  color: #0086B3;
+}
+
+/* Name.Builtin */
+/* line 47, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.nc {
+  color: #445588;
+  font-weight: bold;
+}
+
+/* Name.Class */
+/* line 48, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.no {
+  color: #008080;
+}
+
+/* Name.Constant */
+/* line 49, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.nd {
+  color: #3c5d5d;
+  font-weight: bold;
+}
+
+/* Name.Decorator */
+/* line 50, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.ni {
+  color: #800080;
+}
+
+/* Name.Entity */
+/* line 51, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.ne {
+  color: #990000;
+  font-weight: bold;
+}
+
+/* Name.Exception */
+/* line 52, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.nf {
+  color: #990000;
+  font-weight: bold;
+}
+
+/* Name.Function */
+/* line 53, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.nl {
+  color: #990000;
+  font-weight: bold;
+}
+
+/* Name.Label */
+/* line 54, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.nn {
+  color: #555555;
+}
+
+/* Name.Namespace */
+/* line 55, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.nt {
+  color: #000080;
+}
+
+/* Name.Tag */
+/* line 56, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.nv {
+  color: #008080;
+}
+
+/* Name.Variable */
+/* line 57, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.ow {
+  color: #000000;
+  font-weight: bold;
+}
+
+/* Operator.Word */
+/* line 58, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.w {
+  color: #bbbbbb;
+}
+
+/* Text.Whitespace */
+/* line 59, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.mf {
+  color: #009999;
+}
+
+/* Literal.Number.Float */
+/* line 60, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.mh {
+  color: #009999;
+}
+
+/* Literal.Number.Hex */
+/* line 61, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.mi {
+  color: #009999;
+}
+
+/* Literal.Number.Integer */
+/* line 62, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.mo {
+  color: #009999;
+}
+
+/* Literal.Number.Oct */
+/* line 63, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.sb {
+  color: #d01040;
+}
+
+/* Literal.String.Backtick */
+/* line 64, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.sc {
+  color: #d01040;
+}
+
+/* Literal.String.Char */
+/* line 65, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.sd {
+  color: #d01040;
+}
+
+/* Literal.String.Doc */
+/* line 66, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.s2 {
+  color: #d01040;
+}
+
+/* Literal.String.Double */
+/* line 67, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.se {
+  color: #d01040;
+}
+
+/* Literal.String.Escape */
+/* line 68, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.sh {
+  color: #d01040;
+}
+
+/* Literal.String.Heredoc */
+/* line 69, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.si {
+  color: #d01040;
+}
+
+/* Literal.String.Interpol */
+/* line 70, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.sx {
+  color: #d01040;
+}
+
+/* Literal.String.Other */
+/* line 71, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.sr {
+  color: #009926;
+}
+
+/* Literal.String.Regex */
+/* line 72, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.s1 {
+  color: #d01040;
+}
+
+/* Literal.String.Single */
+/* line 73, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.ss {
+  color: #990073;
+}
+
+/* Literal.String.Symbol */
+/* line 74, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.bp {
+  color: #999999;
+}
+
+/* Name.Builtin.Pseudo */
+/* line 75, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.vc {
+  color: #008080;
+}
+
+/* Name.Variable.Class */
+/* line 76, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.vg {
+  color: #008080;
+}
+
+/* Name.Variable.Global */
+/* line 77, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.vi {
+  color: #008080;
+}
+
+/* Name.Variable.Instance */
+/* line 78, /home/ubuntu/workspace/app/assets/stylesheets/pygments.css.scss */
+.il {
+  color: #009999;
+}
+
+/* Literal.Number.Integer.Long */
+/* line 23, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
 html, body {
   font-family: 'Roboto', sans-serif;
   background-color: #898989;
@@ -12349,74 +13254,76 @@ html, body {
   margin: 0;
 }
 
-/* line 28, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+/* line 29, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
 .fname {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
 }
 
-/* line 32, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+/* line 33, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
 .lname {
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
 }
 
-/* line 38, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+/* line 39, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
 .navbar {
   background-color: rgba(0, 0, 0, 0.5);
   border: none;
 }
 
-/* line 43, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+/* line 44, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
 .navbar-brand {
   font-family: 'Roboto', sans-serif;
   font-weight: 800;
 }
 
 /* line 48, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+.navbar-right {
+  margin-right: 0px;
+}
+
+/* line 52, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
 .navbar-default .navbar-brand,
 .navbar-default .navbar-nav > li > a {
   color: white;
 }
-/* line 51, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+/* line 55, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-nav > li > a:hover {
   color: white;
   opacity: 0.75;
 }
 
-/* line 56, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+/* line 60, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
 .navbar-default .navbar-toggle .icon-bar {
   background-color: white;
 }
 
-/* line 59, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+/* line 63, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
 .navbar-default .navbar-toggle {
   border: 2px solid white;
 }
-/* line 61, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+/* line 65, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* line 65, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
-.nav > li > a {
-  margin-right: 30px;
-  padding-right: 0px;
+/* line 69, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+.navbar-default .navbar-collapse {
+  border: 0;
 }
 
-/* line 71, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+/* line 74, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
 .jumbotron {
-  background-image: url("background.jpg");
+  background-image: url("space.jpg");
   background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   width: 100%;
   height: 500px;
   margin-bottom: 0px;
-  box-shadow: 0px 5px 10px;
+  -webkit-box-shadow: 0px 5px 10px;
+          box-shadow: 0px 5px 10px;
   position: relative;
   z-index: 3;
 }
@@ -12426,7 +13333,8 @@ html, body {
   position: relative;
   height: 200px;
   border-radius: 100%;
-  box-shadow: 5px 5px 10px;
+  -webkit-box-shadow: 5px 5px 10px;
+          box-shadow: 5px 5px 10px;
   margin: auto;
   margin-top: -100px;
   display: block;
@@ -12434,21 +13342,29 @@ html, body {
 }
 
 /* line 98, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
-.gray-bg {
+.white-bg {
   position: relative;
-  background-color: #bebebe;
+  background-color: white;
   margin-top: -100px;
-  box-shadow: 0px 5px 10px;
+  -webkit-box-shadow: 0px 5px 10px;
+          box-shadow: 0px 5px 10px;
   z-index: 2;
 }
 
-/* line 105, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
-.about-me, .blog {
+/* line 106, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+.white-bg-no-margin {
+  position: relative;
+  background-color: white;
+}
+
+/* line 110, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+.about-me, .blog, .passions, .coursework {
   padding: 120px 200px 100px 200px;
 }
 
-/* line 108, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
-.about-me > h1 {
+/* line 113, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+.about-me > h1,
+.passions > h1 {
   margin: auto;
   display: block;
   font-weight: 100;
@@ -12457,117 +13373,320 @@ html, body {
   color: #525252;
 }
 
-/* line 116, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+/* line 122, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
 .about-me > p,
-.blog > p {
+.blog > p,
+.passions p {
   margin-top: 30px;
-  font-size: 14pt;
+  font-size: 13pt;
 }
 
-/* line 121, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+/* line 128, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
 .resume {
   text-align: center;
 }
 
-/* line 126, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+/* line 132, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+.passions {
+  position: relative;
+  color: white;
+}
+
+/* line 137, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+.passions-bg {
+  background: url("services-lg.jpg") no-repeat center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 1000px;
+  position: absolute;
+  margin-left: -15px;
+  margin-bottom: 0px;
+  -webkit-box-shadow: 0px 5px 10px;
+          box-shadow: 0px 5px 10px;
+  color: white;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  opacity: 0.5;
+}
+
+/* line 151, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+.black-bg {
+  background-color: #000;
+}
+
+/* line 154, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+.passions > h1 {
+  color: white;
+}
+
+/* line 159, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+.dark-gray-bg {
+  background-color: #2e2e2e;
+  margin: 0;
+  color: #e7e7e7;
+  position: relative;
+  z-index: 2;
+  -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.7), 0px -2px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.7), 0px -2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* line 168, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+.coursework > h1 {
+  margin: auto;
+  display: block;
+  font-weight: 100;
+  font-size: 45pt;
+  text-align: center;
+  color: #e7e7e7;
+}
+
+/* line 177, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+.circle-logo {
+  height: 100px;
+}
+
+/* line 181, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+.college-title {
+  display: inline-block;
+}
+
+/* line 185, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+.courses {
+  margin-left: 75px;
+}
+
+/* line 189, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
 .blue-bg {
   position: relative;
   background-color: #2e5460;
   margin: 0;
   color: white;
   z-index: 1;
-  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.7), 0px -2px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.7), 0px -2px 5px rgba(0, 0, 0, 0.5);
 }
 
-/* line 134, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+/* line 197, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
 .blue-bg > h1,
 .footer-bg > h1 {
   margin: 0;
 }
 
-/* line 138, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+/* line 201, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
 p.date {
   margin-top: 0;
   font-weight: 100;
 }
 
-/* line 142, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
-a.blog-link {
-  text-align: right;
-  display: block;
+/* line 205, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+.blue-bg a {
   color: white;
 }
-/* line 146, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
-a.blog-link:hover {
+/* line 207, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+.blue-bg a:hover {
   color: white;
-  text-transform: underline;
+  opacity: 0.75;
+  text-decoration: none;
 }
 
-/* line 153, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+/* line 213, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+a.blog-link {
+  float: right;
+  display: block-inline;
+  color: white;
+}
+/* line 217, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+a.blog-link:hover {
+  color: white;
+  text-decoration: none;
+}
+
+/* line 223, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+hr {
+  border-top: 1px solid #337ab7;
+}
+
+/* line 228, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
 .footer-bg {
   background-color: #898989;
   color: white;
+  z-index: -1;
 }
 
-/* line 157, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+/* line 233, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
 .footer {
   padding: 20px 200px 20px 200px;
 }
 
-/* line 160, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
-.footer > h3 {
-  margin-top: 5px;
+/* line 236, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+.footer > h5 {
+  margin-top: 15px;
   display: inline-block;
 }
 
-/* line 164, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+/* line 240, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
 .footer a {
   color: white;
 }
-/* line 166, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+/* line 242, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
 .footer a:hover {
   color: white;
   opacity: 0.75;
   text-decoration: none;
 }
 
-/* line 172, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+/* line 248, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
 .contact-icons {
   color: white;
   display: inline-block;
   float: right;
 }
 
-/* line 177, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+/* line 253, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
 .footer .fa {
   margin-right: 20px;
 }
 
+/* line 258, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+.flash-container {
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+  margin-top: 50px;
+}
+
+/* line 264, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+.alert-notice, .alert-alert {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
+  color: white;
+}
+
+/* line 271, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+.img-responsive {
+  display: inline-block;
+}
+
 @media (max-width: 1023px) {
-  /* line 183, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
-  .about-me, .blog, .footer {
+  /* line 278, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+  .about-me > h1,
+  .passions > h1,
+  .coursework > h1 {
+    font-size: 30pt;
+  }
+
+  /* line 283, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+  .passions h2 {
+    font-size: 20px;
+  }
+
+  /* line 286, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+  .about-me, .blog, .footer, .passions, .coursework {
     padding: 120px 10px 20px 10px;
   }
 
-  /* line 186, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
-  .blog, .footer {
+  /* line 289, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+  .blog {
+    padding-bottom: 50px;
+  }
+
+  /* line 292, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+  .blog, .footer, .passions, .coursework {
     padding-top: 20px;
   }
 
-  /* line 189, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+  /* line 295, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
   .jumbotron {
     height: 200px;
   }
 
-  /* line 192, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
-  .footer h3, .contact-icons {
+  /* line 298, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+  .footer h5, .contact-icons {
     display: block;
     text-align: center;
     float: none;
   }
 
-  /* line 197, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+  /* line 303, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
   .footer .fa {
     margin-right: 0px;
+  }
+
+  /* line 306, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+  .courses {
+    margin-left: 0;
+  }
+
+  /* line 309, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+  .college-title {
+    font-size: 12pt;
+    margin-top: 5px;
+  }
+
+  /* line 313, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+  .circle-logo {
+    height: 50px;
+  }
+
+  /* line 316, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+  h1.display-3 {
+    font-size: 40px;
+  }
+
+  /* line 319, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+  .placeholder {
+    width: 250px;
+    height: 100px;
+  }
+
+  /* line 323, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+  #skills li {
+    margin: 5px;
+  }
+
+  /* line 326, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+  #skills {
+    padding: 0;
+    text-align: center;
+  }
+
+  /* line 330, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+  .projects-np {
+    margin-top: 0;
+  }
+
+  /* line 333, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+  .projects-np h3 {
+    font-size: 15px;
+  }
+
+  /* line 336, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+  .projects-np .fa-2x {
+    font-size: 1em;
+  }
+
+  /* line 339, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+  .hidden-projects-np {
+    display: inline;
+    margin-right: 50px;
+  }
+
+  /* line 343, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+  .show-projects-np {
+    display: none;
+  }
+
+  /* line 346, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+  .projects {
+    padding-top: 450px;
+  }
+}
+@media (max-width: 770px) {
+  /* line 351, /home/ubuntu/workspace/app/assets/stylesheets/application.scss */
+  .nav > li > a {
+    margin-right: 0;
+    text-align: center;
   }
 }
