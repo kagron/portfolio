@@ -1,6 +1,6 @@
 <%= form_for @project, :html => {:multipart => true} do |f| %>
   <div class="form-group">
-      <% if !@project.avatar.nil? %>
+      <% if @project.avatar.present? %>
         <%= image_tag project.avatar.url(:small), class: 'img-responsive' %>
       <% end %>
   </div>
