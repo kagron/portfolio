@@ -5,7 +5,7 @@
       <%= form_for @project, url: project_slug_path(@project.slug), :html => {:multipart => true} do |f| %>
         <div class="form-group">
           <%= f.label :avatar %><br />
-          <% if !@project.avatar.nil? %>
+          <% if @project.avatar.present? %>
             <%= image_tag @project.avatar.url(:medium), class: 'img-responsive' %>
           <% end %>
             
