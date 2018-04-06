@@ -66,6 +66,7 @@ gem 'paperclip'
 
 # Use CarrierWave for attachments
 gem 'carrierwave', '~> 1.0'
+gem 'fog-aws'
 gem 'masonry-rails'
 
 gem 'pg'
