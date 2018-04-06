@@ -15,4 +15,3 @@ ActionMailer::Base.smtp_settings = {
 ActionMailer::Base.delivery_method = :smtp
 
 require 'carrierwave/orm/activerecord'
-require 'fog/aws'

@@ -65,8 +65,8 @@ gem 'tzinfo-data'
 gem 'paperclip'
 
 # Use CarrierWave for attachments
+gem 'fog-aws', group: :production
 gem 'carrierwave', '~> 1.0'
-gem 'fog-aws'
 gem 'masonry-rails'
 
 gem 'pg'
