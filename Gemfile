@@ -29,8 +29,6 @@ gem 'aws-sdk', '~> 2.3'
 # Use Unicorn as the app server
 # gem 'unicorn'
 
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
 
 # Use Twitter Bootstrap library for front-end UI and layout
 gem 'bootstrap-sass', '3.3.7'
@@ -70,8 +68,16 @@ gem 'carrierwave', '~> 1.0'
 gem 'masonry-rails'
 
 gem 'pg'
+gem 'figaro'
+gem 'puma'
+gem 'web-console'
+gem 'spring'
 group :development, :test do
-
+  gem 'capistrano'
+  gem 'capistrano3-puma'
+  gem 'capistrano-rails', require: false
+  gem 'capistrano-bundler', require: false
+  gem 'capistrano-rvm'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
 end
