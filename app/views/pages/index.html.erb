@@ -11,6 +11,7 @@
 <!-- about me section -->
 <div class="container-fluid white-bg">
   <div class="about-me">
+  <% if @about %>
     <h1><%= @about.title %><% if user_signed_in? %>
     <%= link_to edit_path, class: 'btn btn-primary' do %>
       <i class="fa fa-edit"></i>
@@ -21,6 +22,14 @@
     <div class="resume">
       <%= link_to 'view résumé', @about.resume_file_url, class: 'btn btn-default btn-lg' %>
     </div>
+  <% else %>
+    Nothing here!
+    <% if user_signed_in? %>
+    <%= link_to edit_path, class: 'btn btn-primary' do %>
+      <i class="fa fa-edit"></i>
+      <% end %>
+    <% end %>
+  <% end %>
   </div>
 </div> <!-- end about me -->
 <div class="container-fluid black-bg">
@@ -100,6 +109,7 @@
 <!-- latest blog post -->
 <div class="container-fluid blue-bg">
   <div class="blog">
+  <% if @post %>
     <h1><%= link_to  @post.title, post_date_path(@post.year,@post.month,@post.slug) %></h1>
       <p class="date"><i class="fa fa-calendar"></i> <%= @post.created_at.strftime("%B %d, %Y") %></p>
       <p class="post"><%= markdown(@post.content[0..400] + "...") %></p>
@@ -107,5 +117,8 @@
         view full post
         <i class="fa fa-arrow-right"></i>
       <% end %>
+  <% else %>
+    Nothing here!
+  <% end %>
   </div>
 </div>

@@ -9,6 +9,27 @@ class PagesController < ApplicationController
     def edit
         @post = Post.last
         @about = About.last
+        if !@about.present?
+            # If there is no front page, change the page to the new page instead
+            # It will look the same
+            @about = About.new
+          end
+    end
+
+    def create
+        # Retrieve post from url
+        @about = About.new(home_params)
+
+        # Mass Assign edited post attributes
+        if @about.save
+            flash[:success] = "Home Page updated!"
+            # Show success message and redirect to home page
+            redirect_to root_path
+        else
+            # if something failed, return back to the edit page
+            render action: :edit
+        end
+
     end
     
     def update

@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   # Update index
   patch "/", :to => "pages#update"
   put "/", :to => "pages#update"
+  # Creating index
+  post "/", :to => "pages#create"
   # ---------------------------------------------------
   # Blog
   # ---------------------------------------------------
