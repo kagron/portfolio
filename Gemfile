@@ -22,7 +22,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use AWS S3 for storage
-gem 'aws-sdk', '~> 2.3'
+#gem 'aws-sdk'
+gem 'aws-sdk-s3'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
